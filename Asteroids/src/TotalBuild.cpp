@@ -22,7 +22,7 @@ using namespace std;
 
 int main(int argc, const char * argv[]) {
     
-    // Constructo the world object:
+    // Construct the world object:
     World world;
     
     // Run the loop member function:

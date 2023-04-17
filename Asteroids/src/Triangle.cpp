@@ -14,12 +14,15 @@ Triangle::Triangle (){
     position_ = {300, 1200};
     triangle_.setPosition(position_);
 }
+
+//Copy constructor
 Triangle::Triangle (const Triangle& copy){
     triangle_ = copy.triangle_;
     size_ = copy.size_;
     sides_ = copy.sides_;
     position_ = copy.position_;
 }
+
 // Functions:
 
 // Draws the triangle_ shape of the triangle object on the screen.
@@ -31,8 +34,7 @@ void Triangle::draw (sf::RenderWindow& window) const{
 void Triangle::move (sf::RenderWindow& window){
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left) && position_.x> 0){
         triangle_.move(-5.f, 0.f);
-//        assert(position_.x <= 0);
-        // After some debugging, we realized that unless we were setting the triangle_'s position manually like this, the position was inadvertantly remaining at 0,0.
+        // After some debugging, we realized that unless we were setting the triangle_'s position manually like this, the position was inadvertently remaining at 0,0.
         position_.x = triangle_.getPosition().x-5;
     }
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right) && position_.x < 670){
@@ -40,7 +42,6 @@ void Triangle::move (sf::RenderWindow& window){
             position_.x = 0;
         }
         triangle_.move(5.f, 0.f);
-//        assert(position_.x <= 670);
         position_.x = triangle_.getPosition().x+5;
     }
 }
@@ -55,7 +56,7 @@ void Triangle::redraw (sf::Vector2f& position){
     return triangle_.setPosition(position);
 }
 
-// Tests whether or not the triangle collides with an asteroid using some geometry.
+// Tests whether the triangle collides with an asteroid using some geometry.
 bool Triangle::collides (const vector<Asteroid>& asteroids){
     for(Asteroid asteroid: asteroids){
         auto xform = triangle_.getTransform();

@@ -23,6 +23,7 @@ Asteroid::Asteroid (float radius, sf::Vector2f position){
     circle.setFillColor(sf::Color::Red);
 }
 
+//Copy constructor
 Asteroid::Asteroid (const Asteroid& copy){
     radius_ = copy.radius_;
     position_ = copy.position_;
@@ -64,7 +65,6 @@ void Asteroid::redraw(sf::Vector2f position){
 void Asteroid::move(){
     if (position_.y>1280){
         position_.y = 0;
-//        assert(position_.y=0);
     }
     position_.y += 3.f;
     redraw(position_);
@@ -83,6 +83,4 @@ bool Asteroid::canShrink() const{
 // Destructors:
 Asteroid::~Asteroid (){
     radius_ = 0;
-    //position_ = 0;
-    //circle = 0;
 }

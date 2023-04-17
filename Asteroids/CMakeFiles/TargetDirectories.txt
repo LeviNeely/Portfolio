@@ -1,0 +1,3 @@
+/Users/levineely/Asteroids/build/CMakeFiles/asteroids.dir
+/Users/levineely/Asteroids/build/CMakeFiles/edit_cache.dir
+/Users/levineely/Asteroids/build/CMakeFiles/rebuild_cache.dir

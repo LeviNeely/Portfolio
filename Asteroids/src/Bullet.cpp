@@ -22,10 +22,13 @@ Bullet::Bullet (const sf::Vector2f& position){
     circle_.setRadius(radius_);
     circle_.setFillColor(color_);
 }
+
+//Copy constructor
 Bullet::Bullet (const Bullet& copy){
     circle_ = copy.circle_;
     position_ = copy.position_;
 }
+
 // Functions:
 
 // Moves the bullet with a constant speed only in the y direction.
@@ -39,7 +42,7 @@ void Bullet::draw (sf::RenderWindow& window) {
     window.draw(circle_);
 }
 
-// This is a collision detector to use inside it's own deletion section of the main world loop. Without this, it would only delete when it went outside of the screen.
+// This is a collision detector to use inside its own deletion section of the main world loop. Without this, it would only delete when it went outside of the screen.
 bool Bullet::collides (vector<Asteroid>& asteroids){
     for(Asteroid asteroid: asteroids){
         auto xform = circle_.getTransform();
@@ -58,7 +61,7 @@ sf::Vector2f Bullet::getPosition(){
     return position_;
 }
 
-// This function determines whether or not the bullet is outside of the screen, so that it can be deleted.
+// This function determines whether the bullet is outside the screen, so that it can be deleted.
 bool Bullet::canEraseBullet (sf::RenderWindow& window){
     auto position = circle_.getPosition();
     return (position.y < 0);
