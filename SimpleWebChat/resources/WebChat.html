@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <style>
+            h1 {
+                text-align: center;
+                color: cornflowerblue;
+            }
+            label {
+                color: cornflowerblue;
+            }
+            textarea {
+                text-align: left;
+                resize: none;
+                white-space: nowrap;
+                overflow-x: hidden;
+                height: 25px;
+                color: cornflowerblue;
+                background-color: black;
+            }
+            table, tr, td {
+                border: 2px solid darkgray;
+                color: cornflowerblue;
+            }
+            td {
+                background-color: black;
+                height: 500px;
+                vertical-align: top;
+                text-align: left;
+            }
+        </style>
+    </head>
+    <body align="center" style="background-color: black">
+        <h1>Chat Room</h1>
+        <label>User Name:</label>
+        <textarea id="userNameTA"></textarea>
+        <label>Room Name:</label>
+        <textarea id="roomNameTA"></textarea>
+        <br>
+        <br>
+        <table>
+            <tr>
+                <td id="peopleInRoom" style="width: 250px"><b><u><center>People in Room</td>
+                <br>
+                <td id="messages" style="width: 800px"></td>
+            </tr>
+        </table>
+        <br>
+        <label>Message:</label>
+        <textarea id="messageTA"></textarea>
+        <script type="text/javascript" src="WebChat.js"></script>
+    </body>
+</html>
