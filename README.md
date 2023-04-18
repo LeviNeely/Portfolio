@@ -25,6 +25,8 @@ InteractiveTimesTable: A JavaScript web-based interactive times table, showing w
 
 MallocImplementation: A self-implemented malloc() and free() replacement coded in C++. Tested and shown to be only ~30x slower than the builtin malloc() and free().
 
+MathematicalScriptingApp: This is an app developed with Qt and written in C++. It has the possibility to parse input text, interpret that text, or print it in a more visually pleasing way.
+
 PacManPathFinder: A graph-based pathfinding Java program that takes in a maze and finds the shortest path to the destination.
 
 QuickSortAndMergeSort: QuickSort and MergeSort implementation in Java that compares and contrasts the two implementations.
