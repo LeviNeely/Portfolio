@@ -1,0 +1,52 @@
+\hypertarget{_env_8h_source}{}\doxysection{/\+Users/levineely/\+Portfolio/\+Portfolio/\+Mathematical\+Scripting\+App/\+Env.h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ Created\ by\ Levi\ Neely\ on\ 4/11/23.}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#ifndef\ EXPR\_CPP\_ENV\_H}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ EXPR\_CPP\_ENV\_H}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{pointer_8h}{pointer.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }Value;}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_env}{Env}}\ \{}
+\DoxyCodeLine{00015\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00016\ \ \ \ \ \textcolor{keyword}{virtual}\ PTR(Value)\ lookup(\textcolor{keywordtype}{string}\ find\_name)\ =\ 0;}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{static}\ PTR(\mbox{\hyperlink{class_env}{Env}})\ empty;}
+\DoxyCodeLine{00018\ \};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_empty_env}{EmptyEnv}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_env}{Env}}\ \{}
+\DoxyCodeLine{00021\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ PTR(Value)\ lookup(\textcolor{keywordtype}{string}\ find\_name)\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ runtime\_error(\textcolor{stringliteral}{"{}Free\ variable:\ "{}}\ +\ find\_name);}
+\DoxyCodeLine{00024\ \ \ \ \ \}}
+\DoxyCodeLine{00025\ \};}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_extended_env}{ExtendedEnv}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_env}{Env}}\ \{}
+\DoxyCodeLine{00028\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keywordtype}{string}\ name;}
+\DoxyCodeLine{00030\ \ \ \ \ PTR(Value)\ val;}
+\DoxyCodeLine{00031\ \ \ \ \ PTR(\mbox{\hyperlink{class_env}{Env}})\ rest;}
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{class_extended_env}{ExtendedEnv}}(\textcolor{keywordtype}{string}\ name,\ PTR(Value)\ val,\ PTR(\mbox{\hyperlink{class_env}{Env}})\ rest)\ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ this-\/>name\ =\ name;}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ this-\/>val\ =\ val;}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ this-\/>rest\ =\ rest;}
+\DoxyCodeLine{00036\ \ \ \ \ \};}
+\DoxyCodeLine{00037\ \ \ \ \ PTR(Value)\ lookup(\textcolor{keywordtype}{string}\ find\_name)\ \{}
+\DoxyCodeLine{00038\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (find\_name\ ==\ name)\ \{}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ val;}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ rest-\/>lookup(find\_name);}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00044\ \ \ \ \ \}}
+\DoxyCodeLine{00045\ \};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//EXPR\_CPP\_ENV\_H}}
+
+\end{DoxyCode}

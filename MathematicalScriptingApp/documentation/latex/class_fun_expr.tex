@@ -1,0 +1,126 @@
+\hypertarget{class_fun_expr}{}\doxysection{Fun\+Expr Class Reference}
+\label{class_fun_expr}\index{FunExpr@{FunExpr}}
+
+
+\mbox{\hyperlink{class_fun_expr}{Fun\+Expr}} class that represents a function.  
+
+
+
+
+{\ttfamily \#include $<$Expr.\+h$>$}
+
+Inheritance diagram for Fun\+Expr\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_fun_expr}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_fun_expr_af14057d4434fe6aa303e4efa8e9a2a1a}\label{class_fun_expr_af14057d4434fe6aa303e4efa8e9a2a1a}} 
+{\bfseries PTR} (Expr) body
+\begin{DoxyCompactList}\small\item\em The function that will contain the variable that will be evaluated. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_fun_expr_af8d96451055152210be4040bbca38c28}{Fun\+Expr}} (std\+::string \mbox{\hyperlink{class_fun_expr_a85054499591a461d54c6d6f3f12a9cb6}{formal\+\_\+arg}}, \mbox{\hyperlink{class_fun_expr_af14057d4434fe6aa303e4efa8e9a2a1a}{PTR}}(Expr) body)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_fun_expr_a6f7ccdd163970b085de6f0cd1bb6fd44}{equals}} (\mbox{\hyperlink{class_fun_expr_af14057d4434fe6aa303e4efa8e9a2a1a}{PTR}}(Expr) e)
+\begin{DoxyCompactList}\small\item\em A method to check if two Expressions are equal. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_fun_expr_ab4009f89d5c74f615f43eb627c608211}\label{class_fun_expr_ab4009f89d5c74f615f43eb627c608211}} 
+{\bfseries PTR} (Value) interp(PTR(\mbox{\hyperlink{class_env}{Env}}) env)
+\item 
+void \mbox{\hyperlink{class_fun_expr_a21d29f42172d6f8171d13a016d9bcbe7}{print}} (std\+::ostream \&os)
+\begin{DoxyCompactList}\small\item\em A method used to print out the function expression. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_fun_expr_ac3205c9462223945c32afd67b7647b97}{pretty\+\_\+print\+\_\+at}} (std\+::ostream \&os, \mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}{precedence\+\_\+t}} precedence, bool need\+Keyword\+Parenthesis, std\+::streampos \&position)
+\begin{DoxyCompactList}\small\item\em A method used to print out a function expression in a more visually pleasing way. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_fun_expr_a85054499591a461d54c6d6f3f12a9cb6}\label{class_fun_expr_a85054499591a461d54c6d6f3f12a9cb6}} 
+std\+::string {\bfseries formal\+\_\+arg}
+\begin{DoxyCompactList}\small\item\em The variable that will be replaced in the function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_fun_expr}{Fun\+Expr}} class that represents a function. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fun_expr_af8d96451055152210be4040bbca38c28}\label{class_fun_expr_af8d96451055152210be4040bbca38c28}} 
+\index{FunExpr@{FunExpr}!FunExpr@{FunExpr}}
+\index{FunExpr@{FunExpr}!FunExpr@{FunExpr}}
+\doxysubsubsection{\texorpdfstring{FunExpr()}{FunExpr()}}
+{\footnotesize\ttfamily Fun\+Expr\+::\+Fun\+Expr (\begin{DoxyParamCaption}\item[{std\+::string}]{formal\+\_\+arg,  }\item[{\mbox{\hyperlink{class_fun_expr_af14057d4434fe6aa303e4efa8e9a2a1a}{PTR}}(Expr)}]{body }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em formal\+\_\+arg} & the string that will represent the formal argument of the function \\
+\hline
+{\em body} & the expression that represents the function to be analyzed \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fun_expr_a6f7ccdd163970b085de6f0cd1bb6fd44}\label{class_fun_expr_a6f7ccdd163970b085de6f0cd1bb6fd44}} 
+\index{FunExpr@{FunExpr}!equals@{equals}}
+\index{equals@{equals}!FunExpr@{FunExpr}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily bool Fun\+Expr\+::equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_fun_expr_af14057d4434fe6aa303e4efa8e9a2a1a}{PTR}}(Expr)}]{e }\end{DoxyParamCaption})}
+
+
+
+A method to check if two Expressions are equal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & the expression to be checked against \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the expressions are equal, false if not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fun_expr_ac3205c9462223945c32afd67b7647b97}\label{class_fun_expr_ac3205c9462223945c32afd67b7647b97}} 
+\index{FunExpr@{FunExpr}!pretty\_print\_at@{pretty\_print\_at}}
+\index{pretty\_print\_at@{pretty\_print\_at}!FunExpr@{FunExpr}}
+\doxysubsubsection{\texorpdfstring{pretty\_print\_at()}{pretty\_print\_at()}}
+{\footnotesize\ttfamily void Fun\+Expr\+::pretty\+\_\+print\+\_\+at (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{\mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}{precedence\+\_\+t}}}]{precedence,  }\item[{bool}]{need\+Keyword\+Parenthesis,  }\item[{std\+::streampos \&}]{position }\end{DoxyParamCaption})}
+
+
+
+A method used to print out a function expression in a more visually pleasing way. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & the output stream to print to \\
+\hline
+{\em precedence} & the precedence of the expression \\
+\hline
+{\em need\+Keyword\+Parenthesis} & whether or not keyword parentheses are needed \\
+\hline
+{\em position} & the position of the cursor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_fun_expr_a21d29f42172d6f8171d13a016d9bcbe7}\label{class_fun_expr_a21d29f42172d6f8171d13a016d9bcbe7}} 
+\index{FunExpr@{FunExpr}!print@{print}}
+\index{print@{print}!FunExpr@{FunExpr}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Fun\+Expr\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os }\end{DoxyParamCaption})}
+
+
+
+A method used to print out the function expression. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & the output stream to print to \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/levineely/\+Portfolio/\+Portfolio/\+Mathematical\+Scripting\+App/\mbox{\hyperlink{_expr_8h}{Expr.\+h}}\item 
+/\+Users/levineely/\+Portfolio/\+Portfolio/\+Mathematical\+Scripting\+App/\mbox{\hyperlink{_expr_8cpp}{Expr.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,109 @@
+\hypertarget{_expr_8h}{}\doxysection{/\+Users/levineely/\+Portfolio/\+Portfolio/\+Mathematical\+Scripting\+App/\+Expr.h File Reference}
+\label{_expr_8h}\index{/Users/levineely/Portfolio/Portfolio/MathematicalScriptingApp/Expr.h@{/Users/levineely/Portfolio/Portfolio/MathematicalScriptingApp/Expr.h}}
+
+
+Expression class.  
+
+
+{\ttfamily \#include \char`\"{}pointer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Env.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_num_expr}{Num\+Expr}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_num_expr}{Num\+Expr}} class that represents a number, inherits from Expr. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_add_expr}{Add\+Expr}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_add_expr}{Add\+Expr}} class that represents an addition expression, inherits from Expr. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_mult_expr}{Mult\+Expr}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_mult_expr}{Mult\+Expr}} class that represents a multiplication expression, inherits from Expr. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_var_expr}{Var\+Expr}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_var_expr}{Var\+Expr}} class that represents a variable, inherits from Expr. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_let_expr}{Let\+Expr}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_let_expr}{Let\+Expr}} class that represents let phrases (e.\+g. let x = 5 in x + 5), inherits from Expr. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_bool_expr}{Bool\+Expr}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_bool_expr}{Bool\+Expr}} class that represents boolean expressions. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_if_expr}{If\+Expr}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_if_expr}{If\+Expr}} class that represents an if expressions (e.\+g. if...then...else...) \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_eq_expr}{Eq\+Expr}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_eq_expr}{Eq\+Expr}} class that represents equality between two Exprs. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_fun_expr}{Fun\+Expr}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_fun_expr}{Fun\+Expr}} class that represents a function. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_call_expr}{Call\+Expr}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_call_expr}{Call\+Expr}} class that represents a call to a function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}{precedence\+\_\+t}} \{ \mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdfaf120d8115346d86e345cdd23047c9913}{prec\+\_\+none}}
+, \mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdfa71c0fb302c59ffca575cc934cb0d8b7c}{prec\+\_\+eq}}
+, \mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdfaa7e895a29ec0f1ce1a214fb44ce230de}{prec\+\_\+add}}
+, \mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdfac3de395d10b5fa4ccf9e4e1f0a0ef50b}{prec\+\_\+mult}}
+ \}
+\begin{DoxyCompactList}\small\item\em enum to assign precedence for printing functions \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_expr_8h_a63b2eaf23b08c74ca88c315842119206}{CLASS}} (Expr)
+\begin{DoxyCompactList}\small\item\em Expr class that represents an expression. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Expression class. 
+
+This file contains the declarations of the Expr class, its children, and all methods. 
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}\label{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}} 
+\index{Expr.h@{Expr.h}!precedence\_t@{precedence\_t}}
+\index{precedence\_t@{precedence\_t}!Expr.h@{Expr.h}}
+\doxysubsubsection{\texorpdfstring{precedence\_t}{precedence\_t}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}{precedence\+\_\+t}}}
+
+
+
+enum to assign precedence for printing functions 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{prec\_none@{prec\_none}!Expr.h@{Expr.h}}\index{Expr.h@{Expr.h}!prec\_none@{prec\_none}}}\mbox{\Hypertarget{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdfaf120d8115346d86e345cdd23047c9913}\label{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdfaf120d8115346d86e345cdd23047c9913}} 
+prec\+\_\+none&No precedence. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{prec\_eq@{prec\_eq}!Expr.h@{Expr.h}}\index{Expr.h@{Expr.h}!prec\_eq@{prec\_eq}}}\mbox{\Hypertarget{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdfa71c0fb302c59ffca575cc934cb0d8b7c}\label{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdfa71c0fb302c59ffca575cc934cb0d8b7c}} 
+prec\+\_\+eq&Precedence for \mbox{\hyperlink{class_eq_expr}{Eq\+Expr}}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{prec\_add@{prec\_add}!Expr.h@{Expr.h}}\index{Expr.h@{Expr.h}!prec\_add@{prec\_add}}}\mbox{\Hypertarget{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdfaa7e895a29ec0f1ce1a214fb44ce230de}\label{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdfaa7e895a29ec0f1ce1a214fb44ce230de}} 
+prec\+\_\+add&Precedence for \mbox{\hyperlink{class_add_expr}{Add\+Expr}}. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{prec\_mult@{prec\_mult}!Expr.h@{Expr.h}}\index{Expr.h@{Expr.h}!prec\_mult@{prec\_mult}}}\mbox{\Hypertarget{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdfac3de395d10b5fa4ccf9e4e1f0a0ef50b}\label{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdfac3de395d10b5fa4ccf9e4e1f0a0ef50b}} 
+prec\+\_\+mult&Precedence for \mbox{\hyperlink{class_mult_expr}{Mult\+Expr}}. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_expr_8h_a63b2eaf23b08c74ca88c315842119206}\label{_expr_8h_a63b2eaf23b08c74ca88c315842119206}} 
+\index{Expr.h@{Expr.h}!CLASS@{CLASS}}
+\index{CLASS@{CLASS}!Expr.h@{Expr.h}}
+\doxysubsubsection{\texorpdfstring{CLASS()}{CLASS()}}
+{\footnotesize\ttfamily CLASS (\begin{DoxyParamCaption}\item[{Expr}]{ }\end{DoxyParamCaption})}
+
+
+
+Expr class that represents an expression. 
+
+A method for all Expr that represents the Expr as a string \begin{DoxyReturn}{Returns}
+the string representing the Expr
+\end{DoxyReturn}
+A method that prints out Expr in a more visually pleasing way 
+\begin{DoxyParams}{Parameters}
+{\em os} & the output stream the Expr will be printed to\\
+\hline
+\end{DoxyParams}
+A method utilized for testing to return a string from the pretty\+\_\+print method \begin{DoxyReturn}{Returns}
+a string representing an Expr printed using pretty\+\_\+print
+\end{DoxyReturn}

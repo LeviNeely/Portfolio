@@ -1,0 +1,115 @@
+\hypertarget{class_num_value}{}\doxysection{Num\+Value Class Reference}
+\label{class_num_value}\index{NumValue@{NumValue}}
+
+
+\mbox{\hyperlink{class_num_value}{Num\+Value}} class that represents a number value, inherits from Value.  
+
+
+
+
+{\ttfamily \#include $<$Value.\+h$>$}
+
+Inheritance diagram for Num\+Value\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_num_value}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_num_value_a502555950d1cc7dd34a076de02a574e5}{Num\+Value}} (int \mbox{\hyperlink{class_num_value_abccbbe7db0ce2b170bb7c14b41043518}{val}})
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_num_value_a30b9933ccf456a0c06d1cab198677d18}{equals}} (PTR(Value) other\+Value)
+\item 
+\mbox{\Hypertarget{class_num_value_a9d87e288e39f34ef5d33fa81f7d8f606}\label{class_num_value_a9d87e288e39f34ef5d33fa81f7d8f606}} 
+{\bfseries PTR} (Value) add\+\_\+to(PTR(Value) other\+Value)
+\item 
+\mbox{\Hypertarget{class_num_value_a6b02c7a6d4f655b90707bab0e434eb87}\label{class_num_value_a6b02c7a6d4f655b90707bab0e434eb87}} 
+{\bfseries PTR} (Value) multiply\+\_\+with(PTR(Value) other\+Value)
+\item 
+void \mbox{\hyperlink{class_num_value_a0938b33a336120c67679ecb996d3a696}{print}} (std\+::ostream \&os)
+\begin{DoxyCompactList}\small\item\em A method to print out the value of the \mbox{\hyperlink{class_num_value}{Num\+Value}} as a string. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_num_value_a42286afb519d747d462c204117668225}{is\+\_\+true}} ()
+\begin{DoxyCompactList}\small\item\em A method used to determine if the \mbox{\hyperlink{class_num_value}{Num\+Value}} is true. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_num_value_ab3413061bee4acfea96405a61e920d9f}\label{class_num_value_ab3413061bee4acfea96405a61e920d9f}} 
+{\bfseries PTR} (Value) call(PTR(Value) actual\+\_\+arg)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_num_value_abccbbe7db0ce2b170bb7c14b41043518}\label{class_num_value_abccbbe7db0ce2b170bb7c14b41043518}} 
+int {\bfseries val}
+\begin{DoxyCompactList}\small\item\em The integer value of the \mbox{\hyperlink{class_num_value}{Num\+Value}} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_num_value}{Num\+Value}} class that represents a number value, inherits from Value. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_num_value_a502555950d1cc7dd34a076de02a574e5}\label{class_num_value_a502555950d1cc7dd34a076de02a574e5}} 
+\index{NumValue@{NumValue}!NumValue@{NumValue}}
+\index{NumValue@{NumValue}!NumValue@{NumValue}}
+\doxysubsubsection{\texorpdfstring{NumValue()}{NumValue()}}
+{\footnotesize\ttfamily Num\+Value\+::\+Num\+Value (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em int} & val\+: the integer value assigned to the \mbox{\hyperlink{class_num_value}{Num\+Value}} \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_num_value_a30b9933ccf456a0c06d1cab198677d18}\label{class_num_value_a30b9933ccf456a0c06d1cab198677d18}} 
+\index{NumValue@{NumValue}!equals@{equals}}
+\index{equals@{equals}!NumValue@{NumValue}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily bool Num\+Value\+::equals (\begin{DoxyParamCaption}\item[{PTR(Value)}]{other\+Value }\end{DoxyParamCaption})}
+
+\textbackslash{}breif A method to test if two Num\+Values are equal 
+\begin{DoxyParams}{Parameters}
+{\em other\+Value} & the other Value to be tested against \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if they are equal, false if they are not or incompatible 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_num_value_a42286afb519d747d462c204117668225}\label{class_num_value_a42286afb519d747d462c204117668225}} 
+\index{NumValue@{NumValue}!is\_true@{is\_true}}
+\index{is\_true@{is\_true}!NumValue@{NumValue}}
+\doxysubsubsection{\texorpdfstring{is\_true()}{is\_true()}}
+{\footnotesize\ttfamily bool Num\+Value\+::is\+\_\+true (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A method used to determine if the \mbox{\hyperlink{class_num_value}{Num\+Value}} is true. 
+
+\begin{DoxyReturn}{Returns}
+an error, since it is impossible for an int to be a boolean 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_num_value_a0938b33a336120c67679ecb996d3a696}\label{class_num_value_a0938b33a336120c67679ecb996d3a696}} 
+\index{NumValue@{NumValue}!print@{print}}
+\index{print@{print}!NumValue@{NumValue}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Num\+Value\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os }\end{DoxyParamCaption})}
+
+
+
+A method to print out the value of the \mbox{\hyperlink{class_num_value}{Num\+Value}} as a string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & the stream to print out to \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/levineely/\+Portfolio/\+Portfolio/\+Mathematical\+Scripting\+App/\mbox{\hyperlink{_value_8h}{Value.\+h}}\item 
+/\+Users/levineely/\+Portfolio/\+Portfolio/\+Mathematical\+Scripting\+App/\mbox{\hyperlink{_value_8cpp}{Value.\+cpp}}\end{DoxyCompactItemize}

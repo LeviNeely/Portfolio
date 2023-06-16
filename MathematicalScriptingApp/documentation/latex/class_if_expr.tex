@@ -1,0 +1,128 @@
+\hypertarget{class_if_expr}{}\doxysection{If\+Expr Class Reference}
+\label{class_if_expr}\index{IfExpr@{IfExpr}}
+
+
+\mbox{\hyperlink{class_if_expr}{If\+Expr}} class that represents an if expressions (e.\+g. if...then...else...)  
+
+
+
+
+{\ttfamily \#include $<$Expr.\+h$>$}
+
+Inheritance diagram for If\+Expr\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_if_expr}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_if_expr_acde5e1d98e5504d17080c517bf21f87a}\label{class_if_expr_acde5e1d98e5504d17080c517bf21f87a}} 
+{\bfseries PTR} (Expr) condition
+\begin{DoxyCompactList}\small\item\em The condition used in the \mbox{\hyperlink{class_if_expr}{If\+Expr}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_if_expr_aa6ec5db496e9b1786c8ef9a4b961bba3}\label{class_if_expr_aa6ec5db496e9b1786c8ef9a4b961bba3}} 
+{\bfseries PTR} (Expr) rhs
+\begin{DoxyCompactList}\small\item\em The expression representing the \char`\"{}then\char`\"{} statement. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_if_expr_a66b754b01aeaa07fbd6201e9014af936}\label{class_if_expr_a66b754b01aeaa07fbd6201e9014af936}} 
+{\bfseries PTR} (Expr) lhs
+\begin{DoxyCompactList}\small\item\em The expression representing the \char`\"{}else\char`\"{} statement. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_if_expr_aeb23c871a983652f475bc787aadbb3f3}{If\+Expr}} (\mbox{\hyperlink{class_if_expr_acde5e1d98e5504d17080c517bf21f87a}{PTR}}(Expr) condition, \mbox{\hyperlink{class_if_expr_acde5e1d98e5504d17080c517bf21f87a}{PTR}}(Expr) rhs, \mbox{\hyperlink{class_if_expr_acde5e1d98e5504d17080c517bf21f87a}{PTR}}(Expr) lhs)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_if_expr_a917efe4283274aa5d2fbbd43d67f3168}{equals}} (\mbox{\hyperlink{class_if_expr_acde5e1d98e5504d17080c517bf21f87a}{PTR}}(Expr) e)
+\begin{DoxyCompactList}\small\item\em Equals method checks two expressions to see if they are equal. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_if_expr_a2924833a01cc8c0d1f640ba6e3cdda07}\label{class_if_expr_a2924833a01cc8c0d1f640ba6e3cdda07}} 
+{\bfseries PTR} (Value) interp(PTR(\mbox{\hyperlink{class_env}{Env}}) env)
+\item 
+void \mbox{\hyperlink{class_if_expr_a7b21906b7d34bc38674912766330ac05}{print}} (std\+::ostream \&os)
+\begin{DoxyCompactList}\small\item\em Print method that prints the \mbox{\hyperlink{class_if_expr}{If\+Expr}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_if_expr_a8e1b59617cd3c84b51d4557b754a74ac}{pretty\+\_\+print\+\_\+at}} (std\+::ostream \&os, \mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}{precedence\+\_\+t}} precedence, bool need\+Keyword\+Parenthesis, std\+::streampos \&position)
+\begin{DoxyCompactList}\small\item\em A method to print out the \mbox{\hyperlink{class_if_expr}{If\+Expr}} expression in a more visually pleasing way. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_if_expr}{If\+Expr}} class that represents an if expressions (e.\+g. if...then...else...) 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_if_expr_aeb23c871a983652f475bc787aadbb3f3}\label{class_if_expr_aeb23c871a983652f475bc787aadbb3f3}} 
+\index{IfExpr@{IfExpr}!IfExpr@{IfExpr}}
+\index{IfExpr@{IfExpr}!IfExpr@{IfExpr}}
+\doxysubsubsection{\texorpdfstring{IfExpr()}{IfExpr()}}
+{\footnotesize\ttfamily If\+Expr\+::\+If\+Expr (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_if_expr_acde5e1d98e5504d17080c517bf21f87a}{PTR}}(Expr)}]{condition,  }\item[{\mbox{\hyperlink{class_if_expr_acde5e1d98e5504d17080c517bf21f87a}{PTR}}(Expr)}]{rhs,  }\item[{\mbox{\hyperlink{class_if_expr_acde5e1d98e5504d17080c517bf21f87a}{PTR}}(Expr)}]{lhs }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em condition} & the expression used as the condition in the \mbox{\hyperlink{class_if_expr}{If\+Expr}} \\
+\hline
+{\em rhs} & the expression used as the \char`\"{}then\char`\"{} statement \\
+\hline
+{\em lhs} & the expression used as the \char`\"{}else\char`\"{} statement \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_if_expr_a917efe4283274aa5d2fbbd43d67f3168}\label{class_if_expr_a917efe4283274aa5d2fbbd43d67f3168}} 
+\index{IfExpr@{IfExpr}!equals@{equals}}
+\index{equals@{equals}!IfExpr@{IfExpr}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily bool If\+Expr\+::equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_if_expr_acde5e1d98e5504d17080c517bf21f87a}{PTR}}(Expr)}]{e }\end{DoxyParamCaption})}
+
+
+
+Equals method checks two expressions to see if they are equal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Expr} & e = expression to be checked against \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false if not equal or null, true if equal 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_if_expr_a8e1b59617cd3c84b51d4557b754a74ac}\label{class_if_expr_a8e1b59617cd3c84b51d4557b754a74ac}} 
+\index{IfExpr@{IfExpr}!pretty\_print\_at@{pretty\_print\_at}}
+\index{pretty\_print\_at@{pretty\_print\_at}!IfExpr@{IfExpr}}
+\doxysubsubsection{\texorpdfstring{pretty\_print\_at()}{pretty\_print\_at()}}
+{\footnotesize\ttfamily void If\+Expr\+::pretty\+\_\+print\+\_\+at (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{\mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}{precedence\+\_\+t}}}]{precedence,  }\item[{bool}]{need\+Keyword\+Parenthesis,  }\item[{std\+::streampos \&}]{position }\end{DoxyParamCaption})}
+
+
+
+A method to print out the \mbox{\hyperlink{class_if_expr}{If\+Expr}} expression in a more visually pleasing way. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & the stream to print out the expression \\
+\hline
+{\em precedence} & the precedence of the expression \\
+\hline
+{\em need\+Keyword\+Parenthesis} & a boolean to indicate whether or not to include parenthesis in an expression with keywords \\
+\hline
+{\em position} & the current position of the stream that is printing out \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_if_expr_a7b21906b7d34bc38674912766330ac05}\label{class_if_expr_a7b21906b7d34bc38674912766330ac05}} 
+\index{IfExpr@{IfExpr}!print@{print}}
+\index{print@{print}!IfExpr@{IfExpr}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void If\+Expr\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os }\end{DoxyParamCaption})}
+
+
+
+Print method that prints the \mbox{\hyperlink{class_if_expr}{If\+Expr}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ostream} & \&os\+: the ostream to print to \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/levineely/\+Portfolio/\+Portfolio/\+Mathematical\+Scripting\+App/\mbox{\hyperlink{_expr_8h}{Expr.\+h}}\item 
+/\+Users/levineely/\+Portfolio/\+Portfolio/\+Mathematical\+Scripting\+App/\mbox{\hyperlink{_expr_8cpp}{Expr.\+cpp}}\end{DoxyCompactItemize}

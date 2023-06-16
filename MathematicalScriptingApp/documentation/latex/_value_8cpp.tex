@@ -1,0 +1,122 @@
+\hypertarget{_value_8cpp}{}\doxysection{/\+Users/levineely/\+Portfolio/\+Portfolio/\+Mathematical\+Scripting\+App/\+Value.cpp File Reference}
+\label{_value_8cpp}\index{/Users/levineely/Portfolio/Portfolio/MathematicalScriptingApp/Value.cpp@{/Users/levineely/Portfolio/Portfolio/MathematicalScriptingApp/Value.cpp}}
+
+
+Contains the definitions of the Value class along with its children.  
+
+
+{\ttfamily \#include \char`\"{}Expr.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Value.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_value_8cpp_a445ac0805e4c6929996362aa692739cb}{PTR}} (Value) \mbox{\hyperlink{class_num_value}{Num\+Value}}
+\begin{DoxyCompactList}\small\item\em A method to add one \mbox{\hyperlink{class_num_value}{Num\+Value}} to another. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains the definitions of the Value class along with its children. 
+
+This file contains the definitions of the Value class and its children (\mbox{\hyperlink{class_num_value}{Num\+Value}} and Bool\+Val) along with all of their various methods.
+
+\begin{DoxyAuthor}{Author}
+Levi Neely 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_value_8cpp_a445ac0805e4c6929996362aa692739cb}\label{_value_8cpp_a445ac0805e4c6929996362aa692739cb}} 
+\index{Value.cpp@{Value.cpp}!PTR@{PTR}}
+\index{PTR@{PTR}!Value.cpp@{Value.cpp}}
+\doxysubsubsection{\texorpdfstring{PTR()}{PTR()}}
+{\footnotesize\ttfamily PTR (\begin{DoxyParamCaption}\item[{Value}]{ }\end{DoxyParamCaption})}
+
+
+
+A method to add one \mbox{\hyperlink{class_num_value}{Num\+Value}} to another. 
+
+A method to multiply two values together.
+
+A method to add two values together.
+
+A method used to multiply two Bool\+Values together.
+
+A method used to add two Bool\+Values together.
+
+A method used to evaluate a function.
+
+A method to multiply one \mbox{\hyperlink{class_num_value}{Num\+Value}} with another.
+
+
+\begin{DoxyParams}{Parameters}
+{\em other\+Value} & the other \mbox{\hyperlink{class_num_value}{Num\+Value}} to be added to the original \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the combined \mbox{\hyperlink{class_num_value}{Num\+Value}}
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em other\+Value} & the other \mbox{\hyperlink{class_num_value}{Num\+Value}} to be multiplied with the original \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the multiplied \mbox{\hyperlink{class_num_value}{Num\+Value}}
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em actual\+\_\+arg} & the argument to be implemented in the function \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an error, since it is impossible to call a \mbox{\hyperlink{class_num_value}{Num\+Value}}
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em other\+Value} & the other value to add to this one \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an error, since it is impossible to add booleans together
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em other\+Value} & the other value to multiply with this one \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an error, since it is impossible to multiply booleans together
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em actual\+\_\+arg} & the argument to be implemented in the function \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an error, since it is impossible to call a \mbox{\hyperlink{class_bool_value}{Bool\+Value}}
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em other\+Value} & the other value to be added \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an error, since it will not be able to add two Fun\+Values together
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em other\+Value} & the other value to be multiplied \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an error, since it will not be able to multiply two Fun\+Values together
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em actual\+\_\+arg} & the argument to be implemented in the function \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a value representing the function utilizing the actual argument 
+\end{DoxyReturn}

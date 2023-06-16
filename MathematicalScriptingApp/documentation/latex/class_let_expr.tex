@@ -1,0 +1,131 @@
+\hypertarget{class_let_expr}{}\doxysection{Let\+Expr Class Reference}
+\label{class_let_expr}\index{LetExpr@{LetExpr}}
+
+
+\mbox{\hyperlink{class_let_expr}{Let\+Expr}} class that represents let phrases (e.\+g. let x = 5 in x + 5), inherits from Expr.  
+
+
+
+
+{\ttfamily \#include $<$Expr.\+h$>$}
+
+Inheritance diagram for Let\+Expr\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_let_expr}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_let_expr_a327afa6d3b5dedc95ecb568e5331a8f3}\label{class_let_expr_a327afa6d3b5dedc95ecb568e5331a8f3}} 
+{\bfseries PTR} (Expr) rhs
+\begin{DoxyCompactList}\small\item\em The \char`\"{}left-\/hand side\char`\"{} of the let (the thing that will replace val) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_let_expr_a3345757bb723377bb96b23acf7aa6e34}\label{class_let_expr_a3345757bb723377bb96b23acf7aa6e34}} 
+{\bfseries PTR} (Expr) body
+\begin{DoxyCompactList}\small\item\em The \char`\"{}right-\/hand side\char`\"{} of the let (the \char`\"{}in\char`\"{} part, denoting what contains val) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_let_expr_ae25955cb2b60eef24b1a563217ccd8c2}{Let\+Expr}} (std\+::string \mbox{\hyperlink{class_let_expr_a33042f3d064a4b44d3c6b5ed11782596}{val}}, \mbox{\hyperlink{class_let_expr_a327afa6d3b5dedc95ecb568e5331a8f3}{PTR}}(Expr) rhs, \mbox{\hyperlink{class_let_expr_a327afa6d3b5dedc95ecb568e5331a8f3}{PTR}}(Expr) body)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_let_expr_a1255139e8e831ec7e493ab41104eeee1}{equals}} (\mbox{\hyperlink{class_let_expr_a327afa6d3b5dedc95ecb568e5331a8f3}{PTR}}(Expr) e)
+\begin{DoxyCompactList}\small\item\em Equals method checks two \mbox{\hyperlink{class_let_expr}{Let\+Expr}} expressions to see if they are equal. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_let_expr_a03fc359a4b72111dfd5592106246fc5f}\label{class_let_expr_a03fc359a4b72111dfd5592106246fc5f}} 
+{\bfseries PTR} (Value) interp(PTR(\mbox{\hyperlink{class_env}{Env}}) env)
+\item 
+void \mbox{\hyperlink{class_let_expr_a107d86106b35492f97446dce924a1ff2}{print}} (std\+::ostream \&os)
+\begin{DoxyCompactList}\small\item\em Print method that prints the \mbox{\hyperlink{class_let_expr}{Let\+Expr}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_let_expr_aa1d7fb8252788de60d5fc33537e95b72}{pretty\+\_\+print\+\_\+at}} (std\+::ostream \&os, \mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}{precedence\+\_\+t}} precedence, bool need\+Keyword\+Parenthesis, std\+::streampos \&position)
+\begin{DoxyCompactList}\small\item\em A method to print out the \mbox{\hyperlink{class_let_expr}{Let\+Expr}} expression in a more visually pleasing way. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_let_expr_a33042f3d064a4b44d3c6b5ed11782596}\label{class_let_expr_a33042f3d064a4b44d3c6b5ed11782596}} 
+std\+::string {\bfseries val}
+\begin{DoxyCompactList}\small\item\em The variable expression that will be replaced with an Expr. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_let_expr}{Let\+Expr}} class that represents let phrases (e.\+g. let x = 5 in x + 5), inherits from Expr. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_let_expr_ae25955cb2b60eef24b1a563217ccd8c2}\label{class_let_expr_ae25955cb2b60eef24b1a563217ccd8c2}} 
+\index{LetExpr@{LetExpr}!LetExpr@{LetExpr}}
+\index{LetExpr@{LetExpr}!LetExpr@{LetExpr}}
+\doxysubsubsection{\texorpdfstring{LetExpr()}{LetExpr()}}
+{\footnotesize\ttfamily Let\+Expr\+::\+Let\+Expr (\begin{DoxyParamCaption}\item[{std\+::string}]{val,  }\item[{\mbox{\hyperlink{class_let_expr_a327afa6d3b5dedc95ecb568e5331a8f3}{PTR}}(Expr)}]{rhs,  }\item[{\mbox{\hyperlink{class_let_expr_a327afa6d3b5dedc95ecb568e5331a8f3}{PTR}}(Expr)}]{body }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & the string value that explains what will be replaced \\
+\hline
+{\em rhs} & the expression that will replace val \\
+\hline
+{\em rhs} & the expression that contains val that will be replaced \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_let_expr_a1255139e8e831ec7e493ab41104eeee1}\label{class_let_expr_a1255139e8e831ec7e493ab41104eeee1}} 
+\index{LetExpr@{LetExpr}!equals@{equals}}
+\index{equals@{equals}!LetExpr@{LetExpr}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily bool Let\+Expr\+::equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_let_expr_a327afa6d3b5dedc95ecb568e5331a8f3}{PTR}}(Expr)}]{e }\end{DoxyParamCaption})}
+
+
+
+Equals method checks two \mbox{\hyperlink{class_let_expr}{Let\+Expr}} expressions to see if they are equal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Expr} & e = expression to be checked against \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false if not equal or null, true if equal 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_let_expr_aa1d7fb8252788de60d5fc33537e95b72}\label{class_let_expr_aa1d7fb8252788de60d5fc33537e95b72}} 
+\index{LetExpr@{LetExpr}!pretty\_print\_at@{pretty\_print\_at}}
+\index{pretty\_print\_at@{pretty\_print\_at}!LetExpr@{LetExpr}}
+\doxysubsubsection{\texorpdfstring{pretty\_print\_at()}{pretty\_print\_at()}}
+{\footnotesize\ttfamily void Let\+Expr\+::pretty\+\_\+print\+\_\+at (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{\mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}{precedence\+\_\+t}}}]{precedence,  }\item[{bool}]{need\+Keyword\+Parenthesis,  }\item[{std\+::streampos \&}]{position }\end{DoxyParamCaption})}
+
+
+
+A method to print out the \mbox{\hyperlink{class_let_expr}{Let\+Expr}} expression in a more visually pleasing way. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & the stream to print out the expression \\
+\hline
+{\em precedence} & the precedence of the expression \\
+\hline
+{\em need\+Keyword\+Parenthesis} & a boolean to indicate whether or not to include parenthesis in an expression with keywords \\
+\hline
+{\em position} & the current position of the stream that is printing out \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_let_expr_a107d86106b35492f97446dce924a1ff2}\label{class_let_expr_a107d86106b35492f97446dce924a1ff2}} 
+\index{LetExpr@{LetExpr}!print@{print}}
+\index{print@{print}!LetExpr@{LetExpr}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Let\+Expr\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os }\end{DoxyParamCaption})}
+
+
+
+Print method that prints the \mbox{\hyperlink{class_let_expr}{Let\+Expr}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ostream} & \&os\+: the ostream to print to \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/levineely/\+Portfolio/\+Portfolio/\+Mathematical\+Scripting\+App/\mbox{\hyperlink{_expr_8h}{Expr.\+h}}\item 
+/\+Users/levineely/\+Portfolio/\+Portfolio/\+Mathematical\+Scripting\+App/\mbox{\hyperlink{_expr_8cpp}{Expr.\+cpp}}\end{DoxyCompactItemize}

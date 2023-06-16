@@ -1,0 +1,121 @@
+\hypertarget{class_bool_expr}{}\doxysection{Bool\+Expr Class Reference}
+\label{class_bool_expr}\index{BoolExpr@{BoolExpr}}
+
+
+\mbox{\hyperlink{class_bool_expr}{Bool\+Expr}} class that represents boolean expressions.  
+
+
+
+
+{\ttfamily \#include $<$Expr.\+h$>$}
+
+Inheritance diagram for Bool\+Expr\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_bool_expr}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_bool_expr_a38b87bbe293c2fd74e12fcfa4946b194}{Bool\+Expr}} (bool \mbox{\hyperlink{class_bool_expr_a01b2b6cf4e050c4cae0f0f529d21e272}{val}})
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{class_bool_expr}{Bool\+Expr}} class. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_bool_expr_ae4b19b8341f97246898dddd0e37a265b}{equals}} (PTR(Expr) e)
+\begin{DoxyCompactList}\small\item\em Equals method checks two expressions to see if they are equal. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_bool_expr_a7b7d7c09ff96243a8bd16d4125f0afd2}\label{class_bool_expr_a7b7d7c09ff96243a8bd16d4125f0afd2}} 
+{\bfseries PTR} (Value) interp(PTR(\mbox{\hyperlink{class_env}{Env}}) env)
+\item 
+void \mbox{\hyperlink{class_bool_expr_abbb185fea3a59e3c0792823e6d59cbe3}{print}} (std\+::ostream \&os)
+\begin{DoxyCompactList}\small\item\em Print method that prints the \mbox{\hyperlink{class_bool_expr}{Bool\+Expr}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_bool_expr_ab4ef75ba5c250854d3def6eee5031eba}{pretty\+\_\+print\+\_\+at}} (std\+::ostream \&os, \mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}{precedence\+\_\+t}} precedence, bool need\+Keyword\+Parenthesis, std\+::streampos \&position)
+\begin{DoxyCompactList}\small\item\em A method to print out the \mbox{\hyperlink{class_bool_expr}{Bool\+Expr}} expression in a more visually pleasing way. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_bool_expr_a01b2b6cf4e050c4cae0f0f529d21e272}\label{class_bool_expr_a01b2b6cf4e050c4cae0f0f529d21e272}} 
+bool {\bfseries val}
+\begin{DoxyCompactList}\small\item\em The boolean value of the \mbox{\hyperlink{class_bool_expr}{Bool\+Expr}} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_bool_expr}{Bool\+Expr}} class that represents boolean expressions. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_bool_expr_a38b87bbe293c2fd74e12fcfa4946b194}\label{class_bool_expr_a38b87bbe293c2fd74e12fcfa4946b194}} 
+\index{BoolExpr@{BoolExpr}!BoolExpr@{BoolExpr}}
+\index{BoolExpr@{BoolExpr}!BoolExpr@{BoolExpr}}
+\doxysubsubsection{\texorpdfstring{BoolExpr()}{BoolExpr()}}
+{\footnotesize\ttfamily Bool\+Expr\+::\+Bool\+Expr (\begin{DoxyParamCaption}\item[{bool}]{val }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{class_bool_expr}{Bool\+Expr}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & the boolean value for the \mbox{\hyperlink{class_bool_expr}{Bool\+Expr}} class \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_bool_expr_ae4b19b8341f97246898dddd0e37a265b}\label{class_bool_expr_ae4b19b8341f97246898dddd0e37a265b}} 
+\index{BoolExpr@{BoolExpr}!equals@{equals}}
+\index{equals@{equals}!BoolExpr@{BoolExpr}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily bool Bool\+Expr\+::equals (\begin{DoxyParamCaption}\item[{PTR(Expr)}]{e }\end{DoxyParamCaption})}
+
+
+
+Equals method checks two expressions to see if they are equal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Expr} & e = expression to be checked against \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false if not equal or null, true if equal 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bool_expr_ab4ef75ba5c250854d3def6eee5031eba}\label{class_bool_expr_ab4ef75ba5c250854d3def6eee5031eba}} 
+\index{BoolExpr@{BoolExpr}!pretty\_print\_at@{pretty\_print\_at}}
+\index{pretty\_print\_at@{pretty\_print\_at}!BoolExpr@{BoolExpr}}
+\doxysubsubsection{\texorpdfstring{pretty\_print\_at()}{pretty\_print\_at()}}
+{\footnotesize\ttfamily void Bool\+Expr\+::pretty\+\_\+print\+\_\+at (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{\mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}{precedence\+\_\+t}}}]{precedence,  }\item[{bool}]{need\+Keyword\+Parenthesis,  }\item[{std\+::streampos \&}]{position }\end{DoxyParamCaption})}
+
+
+
+A method to print out the \mbox{\hyperlink{class_bool_expr}{Bool\+Expr}} expression in a more visually pleasing way. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & the stream to print out the expression \\
+\hline
+{\em precedence} & the precedence of the expression \\
+\hline
+{\em need\+Keyword\+Parenthesis} & a boolean to indicate whether or not to include parenthesis in an expression with keywords \\
+\hline
+{\em position} & the current position of the stream that is printing out \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_bool_expr_abbb185fea3a59e3c0792823e6d59cbe3}\label{class_bool_expr_abbb185fea3a59e3c0792823e6d59cbe3}} 
+\index{BoolExpr@{BoolExpr}!print@{print}}
+\index{print@{print}!BoolExpr@{BoolExpr}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Bool\+Expr\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os }\end{DoxyParamCaption})}
+
+
+
+Print method that prints the \mbox{\hyperlink{class_bool_expr}{Bool\+Expr}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ostream} & \&os\+: the ostream to print to \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/levineely/\+Portfolio/\+Portfolio/\+Mathematical\+Scripting\+App/\mbox{\hyperlink{_expr_8h}{Expr.\+h}}\item 
+/\+Users/levineely/\+Portfolio/\+Portfolio/\+Mathematical\+Scripting\+App/\mbox{\hyperlink{_expr_8cpp}{Expr.\+cpp}}\end{DoxyCompactItemize}

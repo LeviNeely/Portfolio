@@ -1,0 +1,149 @@
+\hypertarget{_expr_8cpp}{}\doxysection{/\+Users/levineely/\+Portfolio/\+Portfolio/\+Mathematical\+Scripting\+App/\+Expr.cpp File Reference}
+\label{_expr_8cpp}\index{/Users/levineely/Portfolio/Portfolio/MathematicalScriptingApp/Expr.cpp@{/Users/levineely/Portfolio/Portfolio/MathematicalScriptingApp/Expr.cpp}}
+
+
+Contains the definitions of the Expr class along with its children.  
+
+
+{\ttfamily \#include \char`\"{}Value.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Expr.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$stdexcept$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_expr_8cpp_aa20e318a1a7fd80539f17b55ea303586}{PTR}} (Value) \mbox{\hyperlink{class_num_expr}{Num\+Expr}}
+\begin{DoxyCompactList}\small\item\em Interpretation method that computes the value of the expression. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains the definitions of the Expr class along with its children. 
+
+This file contains the definitions of the Expr class and its children (\mbox{\hyperlink{class_num_expr}{Num\+Expr}}, \mbox{\hyperlink{class_add_expr}{Add\+Expr}}, \mbox{\hyperlink{class_mult_expr}{Mult\+Expr}}, \mbox{\hyperlink{class_var_expr}{Var\+Expr}}, and \mbox{\hyperlink{class_let_expr}{Let\+Expr}}) along with all of their various methods.
+
+\begin{DoxyAuthor}{Author}
+Levi Neely 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_expr_8cpp_aa20e318a1a7fd80539f17b55ea303586}\label{_expr_8cpp_aa20e318a1a7fd80539f17b55ea303586}} 
+\index{Expr.cpp@{Expr.cpp}!PTR@{PTR}}
+\index{PTR@{PTR}!Expr.cpp@{Expr.cpp}}
+\doxysubsubsection{\texorpdfstring{PTR()}{PTR()}}
+{\footnotesize\ttfamily PTR (\begin{DoxyParamCaption}\item[{Value}]{ }\end{DoxyParamCaption})}
+
+
+
+Interpretation method that computes the value of the expression. 
+
+A method to multiply two values together.
+
+A method to add two values together.
+
+A method used to multiply two Bool\+Values together.
+
+A method used to add two Bool\+Values together.
+
+A method used to evaluate a function.
+
+A method to multiply one \mbox{\hyperlink{class_num_value}{Num\+Value}} with another.
+
+A method to interpret the value of the \mbox{\hyperlink{class_call_expr}{Call\+Expr}}.
+
+A method to interpret the \mbox{\hyperlink{class_fun_expr}{Fun\+Expr}}.
+
+Method to interpret an \mbox{\hyperlink{class_eq_expr}{Eq\+Expr}}.
+
+Method to interpret an \mbox{\hyperlink{class_if_expr}{If\+Expr}}.
+
+Interpretation method that returns the value of the expression.
+
+Interpretation method that returns the value of the add expression.
+
+\begin{DoxyReturn}{Returns}
+the value of the expression
+
+the value of the two expressions that make up the \mbox{\hyperlink{class_add_expr}{Add\+Expr}}
+
+the value of the product of this expression
+
+a Value, but since this is a variable, it will throw an error
+
+a Value
+
+a \mbox{\hyperlink{class_bool_value}{Bool\+Value}}, since it is a \mbox{\hyperlink{class_bool_expr}{Bool\+Expr}}
+
+the value of the \mbox{\hyperlink{class_if_expr}{If\+Expr}}
+
+true if both sides are interpreted as equal, false if not
+
+a \mbox{\hyperlink{class_fun_value}{Fun\+Value}} representing the \mbox{\hyperlink{class_fun_expr}{Fun\+Expr}}
+
+a value representing the value of the \mbox{\hyperlink{class_call_expr}{Call\+Expr}}
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em other\+Value} & the other \mbox{\hyperlink{class_num_value}{Num\+Value}} to be multiplied with the original \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the multiplied \mbox{\hyperlink{class_num_value}{Num\+Value}}
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em actual\+\_\+arg} & the argument to be implemented in the function \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an error, since it is impossible to call a \mbox{\hyperlink{class_num_value}{Num\+Value}}
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em other\+Value} & the other value to add to this one \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an error, since it is impossible to add booleans together
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em other\+Value} & the other value to multiply with this one \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an error, since it is impossible to multiply booleans together
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em actual\+\_\+arg} & the argument to be implemented in the function \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an error, since it is impossible to call a \mbox{\hyperlink{class_bool_value}{Bool\+Value}}
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em other\+Value} & the other value to be added \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an error, since it will not be able to add two Fun\+Values together
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em other\+Value} & the other value to be multiplied \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an error, since it will not be able to multiply two Fun\+Values together
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em actual\+\_\+arg} & the argument to be implemented in the function \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a value representing the function utilizing the actual argument 
+\end{DoxyReturn}

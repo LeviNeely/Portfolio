@@ -1,0 +1,39 @@
+\hypertarget{pointer_8h}{}\doxysection{/\+Users/levineely/\+Portfolio/\+Portfolio/\+Mathematical\+Scripting\+App/pointer.h File Reference}
+\label{pointer_8h}\index{/Users/levineely/Portfolio/Portfolio/MathematicalScriptingApp/pointer.h@{/Users/levineely/Portfolio/Portfolio/MathematicalScriptingApp/pointer.h}}
+
+
+header file containing macro definitions about which pointer system to use  
+
+
+{\ttfamily \#include $<$memory$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{pointer_8h_a05debc11dbe6149a665549017fb8ece1}\label{pointer_8h_a05debc11dbe6149a665549017fb8ece1}} 
+\#define {\bfseries USE\+\_\+\+PLAIN\+\_\+\+POINTERS}~0
+\item 
+\mbox{\Hypertarget{pointer_8h_ae6a124ef06615dff908e50dff5e39beb}\label{pointer_8h_ae6a124ef06615dff908e50dff5e39beb}} 
+\#define {\bfseries NEW}(T)~std\+::make\+\_\+shared$<$T$>$
+\item 
+\mbox{\Hypertarget{pointer_8h_aea6f4a6df8e9de46b59d1d72c2c76cc4}\label{pointer_8h_aea6f4a6df8e9de46b59d1d72c2c76cc4}} 
+\#define {\bfseries PTR}(T)~std\+::shared\+\_\+ptr$<$T$>$
+\item 
+\mbox{\Hypertarget{pointer_8h_a2a5049bb32606702d78d0e831a6bc72c}\label{pointer_8h_a2a5049bb32606702d78d0e831a6bc72c}} 
+\#define {\bfseries CAST}(T)~std\+::dynamic\+\_\+pointer\+\_\+cast$<$T$>$
+\item 
+\mbox{\Hypertarget{pointer_8h_a596edafe81550dc785047c11319f0fb0}\label{pointer_8h_a596edafe81550dc785047c11319f0fb0}} 
+\#define {\bfseries CLASS}(T)~class T \+: public std\+::enable\+\_\+shared\+\_\+from\+\_\+this$<$T$>$
+\item 
+\mbox{\Hypertarget{pointer_8h_ac048bf3907733b6148c78e7345a30525}\label{pointer_8h_ac048bf3907733b6148c78e7345a30525}} 
+\#define {\bfseries THIS}~shared\+\_\+from\+\_\+this()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+header file containing macro definitions about which pointer system to use 
+
+This file contains the definition of macros used to select which pointer system to utilize inside the program (either smart pointers or classic pointers).
+
+\begin{DoxyAuthor}{Author}
+Levi Neely 
+\end{DoxyAuthor}

@@ -1,0 +1,175 @@
+\hypertarget{_parse_8cpp}{}\doxysection{/\+Users/levineely/\+Portfolio/\+Portfolio/\+Mathematical\+Scripting\+App/\+Parse.cpp File Reference}
+\label{_parse_8cpp}\index{/Users/levineely/Portfolio/Portfolio/MathematicalScriptingApp/Parse.cpp@{/Users/levineely/Portfolio/Portfolio/MathematicalScriptingApp/Parse.cpp}}
+
+
+Contains functions used to parse input from the user or a file.  
+
+
+{\ttfamily \#include \char`\"{}Parse.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Expr.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_parse_8cpp_a079a4d525b4809e370d48e722104d26f}{PTR}} (Expr) parse\+\_\+expr(istream \&in)
+\begin{DoxyCompactList}\small\item\em Method used to parse an expression. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{_parse_8cpp_a46eb81ec863a8b67dea414274f135d76}{parse\+\_\+keyword}} (istream \&in)
+\begin{DoxyCompactList}\small\item\em A helper method to parse individual keywords into strings. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_parse_8cpp_a2fbdc31fe36e4d638d7ac61578741249}{PTR}} (Expr) parse\+\_\+string(string input)
+\begin{DoxyCompactList}\small\item\em A helper method used to parse a string (mostly used for testing) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_parse_8cpp_adb51b982895bab6db9bc13715e046e2b}{skip\+\_\+whitespace}} (istream \&in)
+\begin{DoxyCompactList}\small\item\em A helper method used to skip any whitespace within the input to be parsed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Contains functions used to parse input from the user or a file. 
+
+This file contains the definitions of the methods used to parse either the input from a user or an input file in order to interpret, print, or pretty print an expression
+
+\begin{DoxyAuthor}{Author}
+Levi Neely 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_parse_8cpp_a46eb81ec863a8b67dea414274f135d76}\label{_parse_8cpp_a46eb81ec863a8b67dea414274f135d76}} 
+\index{Parse.cpp@{Parse.cpp}!parse\_keyword@{parse\_keyword}}
+\index{parse\_keyword@{parse\_keyword}!Parse.cpp@{Parse.cpp}}
+\doxysubsubsection{\texorpdfstring{parse\_keyword()}{parse\_keyword()}}
+{\footnotesize\ttfamily string parse\+\_\+keyword (\begin{DoxyParamCaption}\item[{istream \&}]{in }\end{DoxyParamCaption})}
+
+
+
+A helper method to parse individual keywords into strings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & the source of the input \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a string representing the keyword 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_parse_8cpp_a079a4d525b4809e370d48e722104d26f}\label{_parse_8cpp_a079a4d525b4809e370d48e722104d26f}} 
+\index{Parse.cpp@{Parse.cpp}!PTR@{PTR}}
+\index{PTR@{PTR}!Parse.cpp@{Parse.cpp}}
+\doxysubsubsection{\texorpdfstring{PTR()}{PTR()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily PTR (\begin{DoxyParamCaption}\item[{Expr}]{ }\end{DoxyParamCaption}) \&}
+
+
+
+Method used to parse an expression. 
+
+A method used to parse an \mbox{\hyperlink{class_if_expr}{If\+Expr}} from an input stream.
+
+A method used to parse a \mbox{\hyperlink{class_let_expr}{Let\+Expr}} expression.
+
+A method used to parse a \mbox{\hyperlink{class_var_expr}{Var\+Expr}} expression.
+
+A method used to parse a \mbox{\hyperlink{class_num_expr}{Num\+Expr}} expression.
+
+A method used to parse an inner (another part of recursive parsing)
+
+A method used to parse a multicand (another part of the recursive parsing)
+
+A method used to parse an addend (another part of recursive parsing)
+
+Method used to parse a comparg (a way to recursively parse input)
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & the source of the input \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a fully-\/parsed expression
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em in} & the source of the input \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a parsed addend
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em in} & the source of the input \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a parsed multicand
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em in} & the source of the input \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a parsed inner
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em in} & the source of the input \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a fully parsed \mbox{\hyperlink{class_num_expr}{Num\+Expr}} expression
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em in} & the source of the input \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a fully-\/parsed \mbox{\hyperlink{class_var_expr}{Var\+Expr}} expression
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em in} & the source of the input \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a fully-\/parsed \mbox{\hyperlink{class_let_expr}{Let\+Expr}} expression
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em in} & the input stream to read from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a fully parsed \mbox{\hyperlink{class_if_expr}{If\+Expr}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_parse_8cpp_a2fbdc31fe36e4d638d7ac61578741249}\label{_parse_8cpp_a2fbdc31fe36e4d638d7ac61578741249}} 
+\index{Parse.cpp@{Parse.cpp}!PTR@{PTR}}
+\index{PTR@{PTR}!Parse.cpp@{Parse.cpp}}
+\doxysubsubsection{\texorpdfstring{PTR()}{PTR()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily PTR (\begin{DoxyParamCaption}\item[{Expr}]{ }\end{DoxyParamCaption})}
+
+
+
+A helper method used to parse a string (mostly used for testing) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & the string used as the input to be parsed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a fully-\/parsed expression 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_parse_8cpp_adb51b982895bab6db9bc13715e046e2b}\label{_parse_8cpp_adb51b982895bab6db9bc13715e046e2b}} 
+\index{Parse.cpp@{Parse.cpp}!skip\_whitespace@{skip\_whitespace}}
+\index{skip\_whitespace@{skip\_whitespace}!Parse.cpp@{Parse.cpp}}
+\doxysubsubsection{\texorpdfstring{skip\_whitespace()}{skip\_whitespace()}}
+{\footnotesize\ttfamily void skip\+\_\+whitespace (\begin{DoxyParamCaption}\item[{istream \&}]{in }\end{DoxyParamCaption})}
+
+
+
+A helper method used to skip any whitespace within the input to be parsed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & the source of the input \\
+\hline
+\end{DoxyParams}

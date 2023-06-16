@@ -1,0 +1,164 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Read\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Me}{1}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Hierarchical Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Class Hierarchy}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Class Index}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Class List}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}File Index}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}File List}{7}{section.4.1}%
+\contentsline {chapter}{\numberline {5}Class Documentation}{9}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Add\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Expr Class Reference}{9}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Detailed Description}{9}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Constructor \& Destructor Documentation}{10}{subsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.2.1}AddExpr()}{10}{subsubsection.5.1.2.1}%
+\contentsline {subsection}{\numberline {5.1.3}Member Function Documentation}{10}{subsection.5.1.3}%
+\contentsline {subsubsection}{\numberline {5.1.3.1}equals()}{10}{subsubsection.5.1.3.1}%
+\contentsline {subsubsection}{\numberline {5.1.3.2}pretty\_print\_at()}{10}{subsubsection.5.1.3.2}%
+\contentsline {subsubsection}{\numberline {5.1.3.3}print()}{11}{subsubsection.5.1.3.3}%
+\contentsline {section}{\numberline {5.2}Bool\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Expr Class Reference}{11}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Detailed Description}{12}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Constructor \& Destructor Documentation}{12}{subsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.2.1}BoolExpr()}{12}{subsubsection.5.2.2.1}%
+\contentsline {subsection}{\numberline {5.2.3}Member Function Documentation}{12}{subsection.5.2.3}%
+\contentsline {subsubsection}{\numberline {5.2.3.1}equals()}{12}{subsubsection.5.2.3.1}%
+\contentsline {subsubsection}{\numberline {5.2.3.2}pretty\_print\_at()}{13}{subsubsection.5.2.3.2}%
+\contentsline {subsubsection}{\numberline {5.2.3.3}print()}{13}{subsubsection.5.2.3.3}%
+\contentsline {section}{\numberline {5.3}Bool\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Value Class Reference}{13}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Detailed Description}{14}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Constructor \& Destructor Documentation}{14}{subsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.2.1}BoolValue()}{14}{subsubsection.5.3.2.1}%
+\contentsline {subsection}{\numberline {5.3.3}Member Function Documentation}{14}{subsection.5.3.3}%
+\contentsline {subsubsection}{\numberline {5.3.3.1}equals()}{14}{subsubsection.5.3.3.1}%
+\contentsline {subsubsection}{\numberline {5.3.3.2}is\_true()}{16}{subsubsection.5.3.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.3.3}print()}{16}{subsubsection.5.3.3.3}%
+\contentsline {section}{\numberline {5.4}Call\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Expr Class Reference}{16}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Detailed Description}{17}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Constructor \& Destructor Documentation}{17}{subsection.5.4.2}%
+\contentsline {subsubsection}{\numberline {5.4.2.1}CallExpr()}{17}{subsubsection.5.4.2.1}%
+\contentsline {subsection}{\numberline {5.4.3}Member Function Documentation}{18}{subsection.5.4.3}%
+\contentsline {subsubsection}{\numberline {5.4.3.1}equals()}{18}{subsubsection.5.4.3.1}%
+\contentsline {subsubsection}{\numberline {5.4.3.2}pretty\_print\_at()}{18}{subsubsection.5.4.3.2}%
+\contentsline {subsubsection}{\numberline {5.4.3.3}print()}{18}{subsubsection.5.4.3.3}%
+\contentsline {section}{\numberline {5.5}Empty\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Env Class Reference}{19}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Member Function Documentation}{19}{subsection.5.5.1}%
+\contentsline {subsubsection}{\numberline {5.5.1.1}PTR()}{19}{subsubsection.5.5.1.1}%
+\contentsline {section}{\numberline {5.6}Env Class Reference}{20}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Eq\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Expr Class Reference}{20}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}Detailed Description}{21}{subsection.5.7.1}%
+\contentsline {subsection}{\numberline {5.7.2}Constructor \& Destructor Documentation}{21}{subsection.5.7.2}%
+\contentsline {subsubsection}{\numberline {5.7.2.1}EqExpr()}{21}{subsubsection.5.7.2.1}%
+\contentsline {subsection}{\numberline {5.7.3}Member Function Documentation}{21}{subsection.5.7.3}%
+\contentsline {subsubsection}{\numberline {5.7.3.1}equals()}{21}{subsubsection.5.7.3.1}%
+\contentsline {subsubsection}{\numberline {5.7.3.2}pretty\_print\_at()}{21}{subsubsection.5.7.3.2}%
+\contentsline {subsubsection}{\numberline {5.7.3.3}print()}{22}{subsubsection.5.7.3.3}%
+\contentsline {section}{\numberline {5.8}Extended\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Env Class Reference}{22}{section.5.8}%
+\contentsline {subsection}{\numberline {5.8.1}Member Function Documentation}{23}{subsection.5.8.1}%
+\contentsline {subsubsection}{\numberline {5.8.1.1}PTR()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{23}{subsubsection.5.8.1.1}%
+\contentsline {subsubsection}{\numberline {5.8.1.2}PTR()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{23}{subsubsection.5.8.1.2}%
+\contentsline {section}{\numberline {5.9}Fun\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Expr Class Reference}{23}{section.5.9}%
+\contentsline {subsection}{\numberline {5.9.1}Detailed Description}{24}{subsection.5.9.1}%
+\contentsline {subsection}{\numberline {5.9.2}Constructor \& Destructor Documentation}{24}{subsection.5.9.2}%
+\contentsline {subsubsection}{\numberline {5.9.2.1}FunExpr()}{24}{subsubsection.5.9.2.1}%
+\contentsline {subsection}{\numberline {5.9.3}Member Function Documentation}{24}{subsection.5.9.3}%
+\contentsline {subsubsection}{\numberline {5.9.3.1}equals()}{25}{subsubsection.5.9.3.1}%
+\contentsline {subsubsection}{\numberline {5.9.3.2}pretty\_print\_at()}{25}{subsubsection.5.9.3.2}%
+\contentsline {subsubsection}{\numberline {5.9.3.3}print()}{25}{subsubsection.5.9.3.3}%
+\contentsline {section}{\numberline {5.10}Fun\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Value Class Reference}{26}{section.5.10}%
+\contentsline {subsection}{\numberline {5.10.1}Detailed Description}{26}{subsection.5.10.1}%
+\contentsline {subsection}{\numberline {5.10.2}Constructor \& Destructor Documentation}{27}{subsection.5.10.2}%
+\contentsline {subsubsection}{\numberline {5.10.2.1}FunValue()}{27}{subsubsection.5.10.2.1}%
+\contentsline {subsection}{\numberline {5.10.3}Member Function Documentation}{27}{subsection.5.10.3}%
+\contentsline {subsubsection}{\numberline {5.10.3.1}equals()}{27}{subsubsection.5.10.3.1}%
+\contentsline {subsubsection}{\numberline {5.10.3.2}is\_true()}{27}{subsubsection.5.10.3.2}%
+\contentsline {subsubsection}{\numberline {5.10.3.3}print()}{28}{subsubsection.5.10.3.3}%
+\contentsline {section}{\numberline {5.11}If\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Expr Class Reference}{28}{section.5.11}%
+\contentsline {subsection}{\numberline {5.11.1}Detailed Description}{29}{subsection.5.11.1}%
+\contentsline {subsection}{\numberline {5.11.2}Constructor \& Destructor Documentation}{29}{subsection.5.11.2}%
+\contentsline {subsubsection}{\numberline {5.11.2.1}IfExpr()}{29}{subsubsection.5.11.2.1}%
+\contentsline {subsection}{\numberline {5.11.3}Member Function Documentation}{29}{subsection.5.11.3}%
+\contentsline {subsubsection}{\numberline {5.11.3.1}equals()}{29}{subsubsection.5.11.3.1}%
+\contentsline {subsubsection}{\numberline {5.11.3.2}pretty\_print\_at()}{30}{subsubsection.5.11.3.2}%
+\contentsline {subsubsection}{\numberline {5.11.3.3}print()}{30}{subsubsection.5.11.3.3}%
+\contentsline {section}{\numberline {5.12}Let\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Expr Class Reference}{30}{section.5.12}%
+\contentsline {subsection}{\numberline {5.12.1}Detailed Description}{31}{subsection.5.12.1}%
+\contentsline {subsection}{\numberline {5.12.2}Constructor \& Destructor Documentation}{31}{subsection.5.12.2}%
+\contentsline {subsubsection}{\numberline {5.12.2.1}LetExpr()}{31}{subsubsection.5.12.2.1}%
+\contentsline {subsection}{\numberline {5.12.3}Member Function Documentation}{32}{subsection.5.12.3}%
+\contentsline {subsubsection}{\numberline {5.12.3.1}equals()}{32}{subsubsection.5.12.3.1}%
+\contentsline {subsubsection}{\numberline {5.12.3.2}pretty\_print\_at()}{32}{subsubsection.5.12.3.2}%
+\contentsline {subsubsection}{\numberline {5.12.3.3}print()}{32}{subsubsection.5.12.3.3}%
+\contentsline {section}{\numberline {5.13}main\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Widget Class Reference}{33}{section.5.13}%
+\contentsline {section}{\numberline {5.14}Mult\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Expr Class Reference}{34}{section.5.14}%
+\contentsline {subsection}{\numberline {5.14.1}Detailed Description}{34}{subsection.5.14.1}%
+\contentsline {subsection}{\numberline {5.14.2}Constructor \& Destructor Documentation}{34}{subsection.5.14.2}%
+\contentsline {subsubsection}{\numberline {5.14.2.1}MultExpr()}{34}{subsubsection.5.14.2.1}%
+\contentsline {subsection}{\numberline {5.14.3}Member Function Documentation}{35}{subsection.5.14.3}%
+\contentsline {subsubsection}{\numberline {5.14.3.1}equals()}{35}{subsubsection.5.14.3.1}%
+\contentsline {subsubsection}{\numberline {5.14.3.2}pretty\_print\_at()}{35}{subsubsection.5.14.3.2}%
+\contentsline {subsubsection}{\numberline {5.14.3.3}print()}{36}{subsubsection.5.14.3.3}%
+\contentsline {section}{\numberline {5.15}Num\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Expr Class Reference}{36}{section.5.15}%
+\contentsline {subsection}{\numberline {5.15.1}Detailed Description}{37}{subsection.5.15.1}%
+\contentsline {subsection}{\numberline {5.15.2}Constructor \& Destructor Documentation}{37}{subsection.5.15.2}%
+\contentsline {subsubsection}{\numberline {5.15.2.1}NumExpr()}{37}{subsubsection.5.15.2.1}%
+\contentsline {subsection}{\numberline {5.15.3}Member Function Documentation}{37}{subsection.5.15.3}%
+\contentsline {subsubsection}{\numberline {5.15.3.1}equals()}{37}{subsubsection.5.15.3.1}%
+\contentsline {subsubsection}{\numberline {5.15.3.2}pretty\_print\_at()}{37}{subsubsection.5.15.3.2}%
+\contentsline {subsubsection}{\numberline {5.15.3.3}print()}{38}{subsubsection.5.15.3.3}%
+\contentsline {section}{\numberline {5.16}Num\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Value Class Reference}{38}{section.5.16}%
+\contentsline {subsection}{\numberline {5.16.1}Detailed Description}{39}{subsection.5.16.1}%
+\contentsline {subsection}{\numberline {5.16.2}Constructor \& Destructor Documentation}{39}{subsection.5.16.2}%
+\contentsline {subsubsection}{\numberline {5.16.2.1}NumValue()}{39}{subsubsection.5.16.2.1}%
+\contentsline {subsection}{\numberline {5.16.3}Member Function Documentation}{39}{subsection.5.16.3}%
+\contentsline {subsubsection}{\numberline {5.16.3.1}equals()}{39}{subsubsection.5.16.3.1}%
+\contentsline {subsubsection}{\numberline {5.16.3.2}is\_true()}{41}{subsubsection.5.16.3.2}%
+\contentsline {subsubsection}{\numberline {5.16.3.3}print()}{41}{subsubsection.5.16.3.3}%
+\contentsline {section}{\numberline {5.17}Var\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Expr Class Reference}{41}{section.5.17}%
+\contentsline {subsection}{\numberline {5.17.1}Detailed Description}{42}{subsection.5.17.1}%
+\contentsline {subsection}{\numberline {5.17.2}Constructor \& Destructor Documentation}{42}{subsection.5.17.2}%
+\contentsline {subsubsection}{\numberline {5.17.2.1}VarExpr()}{42}{subsubsection.5.17.2.1}%
+\contentsline {subsection}{\numberline {5.17.3}Member Function Documentation}{43}{subsection.5.17.3}%
+\contentsline {subsubsection}{\numberline {5.17.3.1}equals()}{43}{subsubsection.5.17.3.1}%
+\contentsline {subsubsection}{\numberline {5.17.3.2}pretty\_print\_at()}{43}{subsubsection.5.17.3.2}%
+\contentsline {subsubsection}{\numberline {5.17.3.3}print()}{43}{subsubsection.5.17.3.3}%
+\contentsline {chapter}{\numberline {6}File Documentation}{45}{chapter.6}%
+\contentsline {section}{\numberline {6.1}/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/levineely/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Portfolio/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Portfolio/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mathematical\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Scripting\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}App/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Env.h}{45}{section.6.1}%
+\contentsline {section}{\numberline {6.2}/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/levineely/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Portfolio/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Portfolio/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mathematical\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Scripting\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}App/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Expr.cpp File Reference}{45}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Detailed Description}{46}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Function Documentation}{46}{subsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.2.2.1}PTR()}{46}{subsubsection.6.2.2.1}%
+\contentsline {section}{\numberline {6.3}/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/levineely/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Portfolio/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Portfolio/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mathematical\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Scripting\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}App/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Expr.h File Reference}{48}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Detailed Description}{49}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Enumeration Type Documentation}{49}{subsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.2.1}precedence\_t}{49}{subsubsection.6.3.2.1}%
+\contentsline {subsection}{\numberline {6.3.3}Function Documentation}{50}{subsection.6.3.3}%
+\contentsline {subsubsection}{\numberline {6.3.3.1}CLASS()}{50}{subsubsection.6.3.3.1}%
+\contentsline {section}{\numberline {6.4}/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/levineely/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Portfolio/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Portfolio/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mathematical\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Scripting\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}App/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Expr.h}{50}{section.6.4}%
+\contentsline {section}{\numberline {6.5}/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/levineely/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Portfolio/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Portfolio/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mathematical\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Scripting\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}App/mainwidget.h}{52}{section.6.5}%
+\contentsline {section}{\numberline {6.6}/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/levineely/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Portfolio/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Portfolio/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mathematical\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Scripting\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}App/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Parse.cpp File Reference}{53}{section.6.6}%
+\contentsline {subsection}{\numberline {6.6.1}Detailed Description}{53}{subsection.6.6.1}%
+\contentsline {subsection}{\numberline {6.6.2}Function Documentation}{54}{subsection.6.6.2}%
+\contentsline {subsubsection}{\numberline {6.6.2.1}parse\_keyword()}{54}{subsubsection.6.6.2.1}%
+\contentsline {subsubsection}{\numberline {6.6.2.2}PTR()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{54}{subsubsection.6.6.2.2}%
+\contentsline {subsubsection}{\numberline {6.6.2.3}PTR()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{56}{subsubsection.6.6.2.3}%
+\contentsline {subsubsection}{\numberline {6.6.2.4}skip\_whitespace()}{56}{subsubsection.6.6.2.4}%
+\contentsline {section}{\numberline {6.7}/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/levineely/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Portfolio/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Portfolio/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mathematical\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Scripting\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}App/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Parse.h File Reference}{56}{section.6.7}%
+\contentsline {subsection}{\numberline {6.7.1}Detailed Description}{57}{subsection.6.7.1}%
+\contentsline {subsection}{\numberline {6.7.2}Function Documentation}{57}{subsection.6.7.2}%
+\contentsline {subsubsection}{\numberline {6.7.2.1}parse\_keyword()}{57}{subsubsection.6.7.2.1}%
+\contentsline {subsubsection}{\numberline {6.7.2.2}PTR()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{57}{subsubsection.6.7.2.2}%
+\contentsline {subsubsection}{\numberline {6.7.2.3}PTR()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{59}{subsubsection.6.7.2.3}%
+\contentsline {subsubsection}{\numberline {6.7.2.4}skip\_whitespace()}{60}{subsubsection.6.7.2.4}%
+\contentsline {section}{\numberline {6.8}/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/levineely/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Portfolio/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Portfolio/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mathematical\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Scripting\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}App/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Parse.h}{60}{section.6.8}%
+\contentsline {section}{\numberline {6.9}/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/levineely/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Portfolio/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Portfolio/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mathematical\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Scripting\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}App/pointer.h File Reference}{60}{section.6.9}%
+\contentsline {subsection}{\numberline {6.9.1}Detailed Description}{61}{subsection.6.9.1}%
+\contentsline {section}{\numberline {6.10}/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/levineely/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Portfolio/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Portfolio/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mathematical\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Scripting\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}App/pointer.h}{61}{section.6.10}%
+\contentsline {section}{\numberline {6.11}/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/levineely/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Portfolio/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Portfolio/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mathematical\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Scripting\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}App/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Value.cpp File Reference}{61}{section.6.11}%
+\contentsline {subsection}{\numberline {6.11.1}Detailed Description}{62}{subsection.6.11.1}%
+\contentsline {subsection}{\numberline {6.11.2}Function Documentation}{62}{subsection.6.11.2}%
+\contentsline {subsubsection}{\numberline {6.11.2.1}PTR()}{62}{subsubsection.6.11.2.1}%
+\contentsline {section}{\numberline {6.12}/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/levineely/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Portfolio/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Portfolio/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mathematical\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Scripting\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}App/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Value.h File Reference}{64}{section.6.12}%
+\contentsline {subsection}{\numberline {6.12.1}Detailed Description}{64}{subsection.6.12.1}%
+\contentsline {subsection}{\numberline {6.12.2}Function Documentation}{64}{subsection.6.12.2}%
+\contentsline {subsubsection}{\numberline {6.12.2.1}CLASS()}{65}{subsubsection.6.12.2.1}%
+\contentsline {section}{\numberline {6.13}/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Users/levineely/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Portfolio/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Portfolio/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Mathematical\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Scripting\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}App/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Value.h}{65}{section.6.13}%
+\contentsline {chapter}{Index}{67}{section*.61}%

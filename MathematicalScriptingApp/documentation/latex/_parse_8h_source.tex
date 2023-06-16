@@ -1,0 +1,30 @@
+\hypertarget{_parse_8h_source}{}\doxysection{/\+Users/levineely/\+Portfolio/\+Portfolio/\+Mathematical\+Scripting\+App/\+Parse.h}
+\mbox{\hyperlink{_parse_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ EXPR\_CPP\_PARSE\_H}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ EXPR\_CPP\_PARSE\_H}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{pointer_8h}{pointer.h}}"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_expr_8h}{Expr.h}}"{}}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ consume(istream\ \&in,\ \textcolor{keywordtype}{int}\ expect);}
+\DoxyCodeLine{00017\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{_parse_8h_adb51b982895bab6db9bc13715e046e2b}{skip\_whitespace}}(istream\ \&in);}
+\DoxyCodeLine{00018\ PTR(Expr)\ parse\_num(istream\ \&in);}
+\DoxyCodeLine{00019\ PTR(Expr)\ parse\_comparg(istream\ \&in);}
+\DoxyCodeLine{00020\ PTR(Expr)\ parse\_addend(istream\ \&in);}
+\DoxyCodeLine{00021\ PTR(Expr)\ parse\_multicand(istream\ \&in);}
+\DoxyCodeLine{00022\ PTR(Expr)\ parse\_inner(istream\ \&in);}
+\DoxyCodeLine{00023\ PTR(Expr)\ parse\_expr(istream\ \&in);}
+\DoxyCodeLine{00024\ PTR(Expr)\ parse\_var(istream\ \&in);}
+\DoxyCodeLine{00025\ PTR(Expr)\ parse\_let(istream\ \&in);}
+\DoxyCodeLine{00026\ PTR(Expr)\ parse\_if(istream\ \&in);}
+\DoxyCodeLine{00027\ PTR(Expr)\ parse\_function(istream\ \&in);}
+\DoxyCodeLine{00028\ PTR(Expr)\ parse\_string(\textcolor{keywordtype}{string}\ input);}
+\DoxyCodeLine{00029\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{_parse_8h_a46eb81ec863a8b67dea414274f135d76}{parse\_keyword}}(istream\ \&in);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//EXPR\_CPP\_PARSE\_H}}
+
+\end{DoxyCode}

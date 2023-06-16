@@ -1,0 +1,123 @@
+\hypertarget{class_mult_expr}{}\doxysection{Mult\+Expr Class Reference}
+\label{class_mult_expr}\index{MultExpr@{MultExpr}}
+
+
+\mbox{\hyperlink{class_mult_expr}{Mult\+Expr}} class that represents a multiplication expression, inherits from Expr.  
+
+
+
+
+{\ttfamily \#include $<$Expr.\+h$>$}
+
+Inheritance diagram for Mult\+Expr\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_mult_expr}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_mult_expr_abdb2f970f2a363777a97fb9ddf460358}\label{class_mult_expr_abdb2f970f2a363777a97fb9ddf460358}} 
+{\bfseries PTR} (Expr) lhs
+\begin{DoxyCompactList}\small\item\em The Expr on the left-\/hand side of the \mbox{\hyperlink{class_mult_expr}{Mult\+Expr}} class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_mult_expr_a59c6655d8b4803fdb82bdea5e25640c8}\label{class_mult_expr_a59c6655d8b4803fdb82bdea5e25640c8}} 
+{\bfseries PTR} (Expr) rhs
+\begin{DoxyCompactList}\small\item\em The Expr on the right-\/hand side of the \mbox{\hyperlink{class_mult_expr}{Mult\+Expr}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_mult_expr_a42dee92b694e43d0ed69942d5da3b66b}{Mult\+Expr}} (\mbox{\hyperlink{class_mult_expr_abdb2f970f2a363777a97fb9ddf460358}{PTR}}(Expr) lhs, \mbox{\hyperlink{class_mult_expr_abdb2f970f2a363777a97fb9ddf460358}{PTR}}(Expr) rhs)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_mult_expr_a4dc2aa133003fd7c028c7049c2d57238}{equals}} (\mbox{\hyperlink{class_mult_expr_abdb2f970f2a363777a97fb9ddf460358}{PTR}}(Expr) e)
+\begin{DoxyCompactList}\small\item\em Equals method checks two expressions to see if they are equal. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_mult_expr_ab22a15a7f08fccdff1ce2c3f73d67b10}\label{class_mult_expr_ab22a15a7f08fccdff1ce2c3f73d67b10}} 
+{\bfseries PTR} (Value) interp(PTR(\mbox{\hyperlink{class_env}{Env}}) env)
+\item 
+void \mbox{\hyperlink{class_mult_expr_a1bc82dd48b442074e595b3e53228a4f1}{print}} (std\+::ostream \&os)
+\begin{DoxyCompactList}\small\item\em Print method that prints the \mbox{\hyperlink{class_mult_expr}{Mult\+Expr}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_mult_expr_a1c37f9457d89faa32548bb8273f8461d}{pretty\+\_\+print\+\_\+at}} (std\+::ostream \&os, \mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}{precedence\+\_\+t}} precedence, bool need\+Keyword\+Parenthesis, std\+::streampos \&position)
+\begin{DoxyCompactList}\small\item\em A method to print out the \mbox{\hyperlink{class_mult_expr}{Mult\+Expr}} in a more visually pleasing way. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_mult_expr}{Mult\+Expr}} class that represents a multiplication expression, inherits from Expr. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_mult_expr_a42dee92b694e43d0ed69942d5da3b66b}\label{class_mult_expr_a42dee92b694e43d0ed69942d5da3b66b}} 
+\index{MultExpr@{MultExpr}!MultExpr@{MultExpr}}
+\index{MultExpr@{MultExpr}!MultExpr@{MultExpr}}
+\doxysubsubsection{\texorpdfstring{MultExpr()}{MultExpr()}}
+{\footnotesize\ttfamily Mult\+Expr\+::\+Mult\+Expr (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mult_expr_abdb2f970f2a363777a97fb9ddf460358}{PTR}}(Expr)}]{lhs,  }\item[{\mbox{\hyperlink{class_mult_expr_abdb2f970f2a363777a97fb9ddf460358}{PTR}}(Expr)}]{rhs }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Expr} & lhs = left hand side expression \\
+\hline
+{\em Expr} & rhs = right hand side expression \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_mult_expr_a4dc2aa133003fd7c028c7049c2d57238}\label{class_mult_expr_a4dc2aa133003fd7c028c7049c2d57238}} 
+\index{MultExpr@{MultExpr}!equals@{equals}}
+\index{equals@{equals}!MultExpr@{MultExpr}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily bool Mult\+Expr\+::equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_mult_expr_abdb2f970f2a363777a97fb9ddf460358}{PTR}}(Expr)}]{e }\end{DoxyParamCaption})}
+
+
+
+Equals method checks two expressions to see if they are equal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Expr} & e = expression to be checked against \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false if not equal or null, true if equal 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_mult_expr_a1c37f9457d89faa32548bb8273f8461d}\label{class_mult_expr_a1c37f9457d89faa32548bb8273f8461d}} 
+\index{MultExpr@{MultExpr}!pretty\_print\_at@{pretty\_print\_at}}
+\index{pretty\_print\_at@{pretty\_print\_at}!MultExpr@{MultExpr}}
+\doxysubsubsection{\texorpdfstring{pretty\_print\_at()}{pretty\_print\_at()}}
+{\footnotesize\ttfamily void Mult\+Expr\+::pretty\+\_\+print\+\_\+at (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{\mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}{precedence\+\_\+t}}}]{precedence,  }\item[{bool}]{need\+Keyword\+Parenthesis,  }\item[{std\+::streampos \&}]{position }\end{DoxyParamCaption})}
+
+
+
+A method to print out the \mbox{\hyperlink{class_mult_expr}{Mult\+Expr}} in a more visually pleasing way. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & the stream to print out the expression \\
+\hline
+{\em precedence} & the precedence of the expression \\
+\hline
+{\em need\+Keyword\+Parenthesis} & a boolean to indicate whether or not to include parenthesis in an expression with keywords \\
+\hline
+{\em position} & the current position of the stream that is printing out \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_mult_expr_a1bc82dd48b442074e595b3e53228a4f1}\label{class_mult_expr_a1bc82dd48b442074e595b3e53228a4f1}} 
+\index{MultExpr@{MultExpr}!print@{print}}
+\index{print@{print}!MultExpr@{MultExpr}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Mult\+Expr\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os }\end{DoxyParamCaption})}
+
+
+
+Print method that prints the \mbox{\hyperlink{class_mult_expr}{Mult\+Expr}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ostream} & \&os\+: the ostream to print to \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/levineely/\+Portfolio/\+Portfolio/\+Mathematical\+Scripting\+App/\mbox{\hyperlink{_expr_8h}{Expr.\+h}}\item 
+/\+Users/levineely/\+Portfolio/\+Portfolio/\+Mathematical\+Scripting\+App/\mbox{\hyperlink{_expr_8cpp}{Expr.\+cpp}}\end{DoxyCompactItemize}

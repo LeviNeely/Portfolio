@@ -1,0 +1,49 @@
+\hypertarget{mainwidget_8h_source}{}\doxysection{/\+Users/levineely/\+Portfolio/\+Portfolio/\+Mathematical\+Scripting\+App/mainwidget.h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ MAINWIDGET\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ MAINWIDGET\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QWidget>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QLabel>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QLineEdit>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QSpinBox>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <QRadioButton>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <QPushButton>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <QTextEdit>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <QVBoxLayout>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <QGridLayout>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <QHBoxLayout>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <QGroupBox>}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classmain_widget}{mainWidget}}\ :\ \textcolor{keyword}{public}\ QWidget}
+\DoxyCodeLine{00017\ \{}
+\DoxyCodeLine{00018\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classmain_widget}{mainWidget}}(QWidget\ *parent\ =\ \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{00021\ \ \ \ \ QVBoxLayout\ *vertical1;}
+\DoxyCodeLine{00022\ \ \ \ \ QHBoxLayout\ *horizontal1;}
+\DoxyCodeLine{00023\ \ \ \ \ QLabel\ *expression;}
+\DoxyCodeLine{00024\ \ \ \ \ QVBoxLayout\ *vertical2;}
+\DoxyCodeLine{00025\ \ \ \ \ QTextEdit\ *input;}
+\DoxyCodeLine{00026\ \ \ \ \ QGroupBox\ *groupBox;}
+\DoxyCodeLine{00027\ \ \ \ \ QGridLayout\ *grid;}
+\DoxyCodeLine{00028\ \ \ \ \ QRadioButton\ *interpButton;}
+\DoxyCodeLine{00029\ \ \ \ \ QRadioButton\ *prettyPrintButton;}
+\DoxyCodeLine{00030\ \ \ \ \ QLabel\ *interp;}
+\DoxyCodeLine{00031\ \ \ \ \ QLabel\ *prettyPrint;}
+\DoxyCodeLine{00032\ \ \ \ \ QPushButton\ *submit;}
+\DoxyCodeLine{00033\ \ \ \ \ QHBoxLayout\ *horizontal2;}
+\DoxyCodeLine{00034\ \ \ \ \ QLabel\ *result;}
+\DoxyCodeLine{00035\ \ \ \ \ QVBoxLayout\ *vertical3;}
+\DoxyCodeLine{00036\ \ \ \ \ QTextEdit\ *output;}
+\DoxyCodeLine{00037\ \ \ \ \ QPushButton\ *reset;}
+\DoxyCodeLine{00038\ signals:}
+\DoxyCodeLine{00039\ \textcolor{keyword}{public}\ slots:}
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ submitPush();}
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{void}\ resetPush();}
+\DoxyCodeLine{00042\ \};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MAINWIDGET\_H}}
+
+\end{DoxyCode}

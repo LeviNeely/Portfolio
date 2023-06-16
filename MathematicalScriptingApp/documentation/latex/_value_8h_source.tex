@@ -1,0 +1,70 @@
+\hypertarget{_value_8h_source}{}\doxysection{/\+Users/levineely/\+Portfolio/\+Portfolio/\+Mathematical\+Scripting\+App/\+Value.h}
+\mbox{\hyperlink{_value_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ EXPR\_CPP\_VALUE\_H}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ EXPR\_CPP\_VALUE\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{pointer_8h}{pointer.h}}"{}}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}Env.h"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <sstream>}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }Expr;}
+\DoxyCodeLine{00020\ CLASS(Value)\ \{}
+\DoxyCodeLine{00021\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ equals(PTR(Value)\ otherValue)\ =\ 0;}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{virtual}\ PTR(Value)\ add\_to(PTR(Value)\ otherValue)\ =\ 0;}
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{virtual}\ PTR(Value)\ multiply\_with(PTR(Value)\ otherValue)\ =\ 0;}
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ print(std::ostream\&\ os)\ =\ 0;}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ is\_true()\ =\ 0;}
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keyword}{virtual}\ PTR(Value)\ call(PTR(Value)\ actual\_arg)\ =\ 0;}
+\DoxyCodeLine{00032\ \ \ \ \ std::string\ to\_string()\ \{}
+\DoxyCodeLine{00033\ \ \ \ \ \ \ \ \ std::stringstream\ st(\textcolor{stringliteral}{"{}"{}});}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ THIS-\/>print(st);}
+\DoxyCodeLine{00035\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ st.str();}
+\DoxyCodeLine{00036\ \ \ \ \ \};}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{virtual}\ \string~Value()\ \{\};}
+\DoxyCodeLine{00038\ \};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00043\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_num_value}{NumValue}}\ :\ \textcolor{keyword}{public}\ Value\ \{}
+\DoxyCodeLine{00044\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_num_value_abccbbe7db0ce2b170bb7c14b41043518}{val}};\ }
+\DoxyCodeLine{00046\ \ \ \ \ \mbox{\hyperlink{class_num_value}{NumValue}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_num_value_abccbbe7db0ce2b170bb7c14b41043518}{val}});}
+\DoxyCodeLine{00047\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_num_value_a30b9933ccf456a0c06d1cab198677d18}{equals}}(PTR(Value)\ otherValue);}
+\DoxyCodeLine{00048\ \ \ \ \ PTR(Value)\ add\_to(PTR(Value)\ otherValue);}
+\DoxyCodeLine{00049\ \ \ \ \ PTR(Value)\ multiply\_with(PTR(Value)\ otherValue);}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_num_value_a0938b33a336120c67679ecb996d3a696}{print}}(std::ostream\&\ os);}
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_num_value_a42286afb519d747d462c204117668225}{is\_true}}();}
+\DoxyCodeLine{00052\ \ \ \ \ PTR(Value)\ call(PTR(Value)\ actual\_arg);}
+\DoxyCodeLine{00053\ \};}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00058\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_bool_value}{BoolValue}}\ :\ \textcolor{keyword}{public}\ Value\ \{}
+\DoxyCodeLine{00059\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00060\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_bool_value_a562920bad0fba6f0004d7d7a7e33e81e}{val}};\ }
+\DoxyCodeLine{00061\ \ \ \ \ \mbox{\hyperlink{class_bool_value}{BoolValue}}(\textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_bool_value_a562920bad0fba6f0004d7d7a7e33e81e}{val}});}
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_bool_value_a0ee289a956db6454dbd7613fa7d09659}{equals}}(PTR(Value)\ otherValue);}
+\DoxyCodeLine{00063\ \ \ \ \ PTR(Value)\ add\_to(PTR(Value)\ otherValue);}
+\DoxyCodeLine{00064\ \ \ \ \ PTR(Value)\ multiply\_with(PTR(Value)\ otherValue);}
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_bool_value_a1bd6df8ddfd01f41828c917459299e7b}{print}}(std::ostream\&\ os);}
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_bool_value_ab1fcddd41628fbb80413c4f5c4bd04c0}{is\_true}}();}
+\DoxyCodeLine{00067\ \ \ \ \ PTR(Value)\ call(PTR(Value)\ actual\_arg);}
+\DoxyCodeLine{00068\ \};}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00073\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_fun_value}{FunValue}}\ :\ \textcolor{keyword}{public}\ Value\ \{}
+\DoxyCodeLine{00074\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00075\ \ \ \ \ std::string\ \mbox{\hyperlink{class_fun_value_a24df198c95a2f5087680c2b8b97eb437}{formal\_arg}};\ }
+\DoxyCodeLine{00076\ \ \ \ \ \mbox{\hyperlink{class_fun_value_a28a711693ba456bbc974cc700acac655}{PTR}}(Expr)\ body;\ }
+\DoxyCodeLine{00077\ \ \ \ \ \mbox{\hyperlink{class_fun_value_a2482e80666e8a4b85a59cf951ed72471}{PTR}}(\mbox{\hyperlink{class_env}{Env}})\ env;\ }
+\DoxyCodeLine{00078\ \ \ \ \ \mbox{\hyperlink{class_fun_value}{FunValue}}(std::string\ \mbox{\hyperlink{class_fun_value_a24df198c95a2f5087680c2b8b97eb437}{formal\_arg}},\ \mbox{\hyperlink{class_fun_value_a28a711693ba456bbc974cc700acac655}{PTR}}(Expr)\ body,\ \mbox{\hyperlink{class_fun_value_a28a711693ba456bbc974cc700acac655}{PTR}}(\mbox{\hyperlink{class_env}{Env}})\ env);}
+\DoxyCodeLine{00079\ \ \ \ \ \mbox{\hyperlink{class_fun_value_a28a711693ba456bbc974cc700acac655}{PTR}}(Expr)\ to\_expr();}
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_fun_value_a8e3fe1183705dd094eb37aec3849a67e}{equals}}(\mbox{\hyperlink{class_fun_value_a28a711693ba456bbc974cc700acac655}{PTR}}(Value)\ otherValue);}
+\DoxyCodeLine{00081\ \ \ \ \ \mbox{\hyperlink{class_fun_value_a28a711693ba456bbc974cc700acac655}{PTR}}(Value)\ add\_to(\mbox{\hyperlink{class_fun_value_a28a711693ba456bbc974cc700acac655}{PTR}}(Value)\ otherValue);}
+\DoxyCodeLine{00082\ \ \ \ \ \mbox{\hyperlink{class_fun_value_a28a711693ba456bbc974cc700acac655}{PTR}}(Value)\ multiply\_with(\mbox{\hyperlink{class_fun_value_a28a711693ba456bbc974cc700acac655}{PTR}}(Value)\ otherValue);}
+\DoxyCodeLine{00083\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fun_value_a50e554e4e79e23f628ca8f6408636be6}{print}}(std::ostream\&\ os);}
+\DoxyCodeLine{00084\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_fun_value_afe35a7c85e57228652d844824ab8ce02}{is\_true}}();}
+\DoxyCodeLine{00085\ \ \ \ \ \mbox{\hyperlink{class_fun_value_a28a711693ba456bbc974cc700acac655}{PTR}}(Value)\ call(\mbox{\hyperlink{class_fun_value_a28a711693ba456bbc974cc700acac655}{PTR}}(Value)\ actual\_arg);}
+\DoxyCodeLine{00086\ \};}
+\DoxyCodeLine{00087\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//EXPR\_CPP\_VALUE\_H}}
+
+\end{DoxyCode}

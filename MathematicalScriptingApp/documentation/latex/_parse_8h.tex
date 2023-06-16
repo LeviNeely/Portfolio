@@ -1,0 +1,169 @@
+\hypertarget{_parse_8h}{}\doxysection{/\+Users/levineely/\+Portfolio/\+Portfolio/\+Mathematical\+Scripting\+App/\+Parse.h File Reference}
+\label{_parse_8h}\index{/Users/levineely/Portfolio/Portfolio/MathematicalScriptingApp/Parse.h@{/Users/levineely/Portfolio/Portfolio/MathematicalScriptingApp/Parse.h}}
+
+
+Parse declaration.  
+
+
+{\ttfamily \#include \char`\"{}pointer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Expr.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_parse_8h_adb51b982895bab6db9bc13715e046e2b}{skip\+\_\+whitespace}} (istream \&in)
+\begin{DoxyCompactList}\small\item\em A helper method used to skip any whitespace within the input to be parsed. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_parse_8h_af3065cf32f737005f85822181982cd52}{PTR}} (Expr) parse\+\_\+num(istream \&in)
+\begin{DoxyCompactList}\small\item\em Method used to parse an expression. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_parse_8h_a2fbdc31fe36e4d638d7ac61578741249}{PTR}} (Expr) parse\+\_\+string(string input)
+\begin{DoxyCompactList}\small\item\em A helper method used to parse a string (mostly used for testing) \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{_parse_8h_a46eb81ec863a8b67dea414274f135d76}{parse\+\_\+keyword}} (istream \&in)
+\begin{DoxyCompactList}\small\item\em A helper method to parse individual keywords into strings. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Parse declaration. 
+
+This file contains the declaration of the various methods used in the Parsing Process. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_parse_8h_a46eb81ec863a8b67dea414274f135d76}\label{_parse_8h_a46eb81ec863a8b67dea414274f135d76}} 
+\index{Parse.h@{Parse.h}!parse\_keyword@{parse\_keyword}}
+\index{parse\_keyword@{parse\_keyword}!Parse.h@{Parse.h}}
+\doxysubsubsection{\texorpdfstring{parse\_keyword()}{parse\_keyword()}}
+{\footnotesize\ttfamily string parse\+\_\+keyword (\begin{DoxyParamCaption}\item[{istream \&}]{in }\end{DoxyParamCaption})}
+
+
+
+A helper method to parse individual keywords into strings. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & the source of the input \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a string representing the keyword 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_parse_8h_af3065cf32f737005f85822181982cd52}\label{_parse_8h_af3065cf32f737005f85822181982cd52}} 
+\index{Parse.h@{Parse.h}!PTR@{PTR}}
+\index{PTR@{PTR}!Parse.h@{Parse.h}}
+\doxysubsubsection{\texorpdfstring{PTR()}{PTR()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily PTR (\begin{DoxyParamCaption}\item[{Expr}]{ }\end{DoxyParamCaption}) \&}
+
+
+
+Method used to parse an expression. 
+
+A method used to parse an \mbox{\hyperlink{class_if_expr}{If\+Expr}} from an input stream.
+
+A method used to parse a \mbox{\hyperlink{class_let_expr}{Let\+Expr}} expression.
+
+A method used to parse a \mbox{\hyperlink{class_var_expr}{Var\+Expr}} expression.
+
+A method used to parse a \mbox{\hyperlink{class_num_expr}{Num\+Expr}} expression.
+
+A method used to parse an inner (another part of recursive parsing)
+
+A method used to parse a multicand (another part of the recursive parsing)
+
+A method used to parse an addend (another part of recursive parsing)
+
+Method used to parse a comparg (a way to recursively parse input)
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & the source of the input \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a fully-\/parsed expression
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em in} & the source of the input \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a parsed addend
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em in} & the source of the input \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a parsed multicand
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em in} & the source of the input \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a parsed inner
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em in} & the source of the input \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a fully parsed \mbox{\hyperlink{class_num_expr}{Num\+Expr}} expression
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em in} & the source of the input \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a fully-\/parsed \mbox{\hyperlink{class_var_expr}{Var\+Expr}} expression
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em in} & the source of the input \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a fully-\/parsed \mbox{\hyperlink{class_let_expr}{Let\+Expr}} expression
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em in} & the input stream to read from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a fully parsed \mbox{\hyperlink{class_if_expr}{If\+Expr}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_parse_8h_a2fbdc31fe36e4d638d7ac61578741249}\label{_parse_8h_a2fbdc31fe36e4d638d7ac61578741249}} 
+\index{Parse.h@{Parse.h}!PTR@{PTR}}
+\index{PTR@{PTR}!Parse.h@{Parse.h}}
+\doxysubsubsection{\texorpdfstring{PTR()}{PTR()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily PTR (\begin{DoxyParamCaption}\item[{Expr}]{ }\end{DoxyParamCaption})}
+
+
+
+A helper method used to parse a string (mostly used for testing) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em input} & the string used as the input to be parsed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a fully-\/parsed expression 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_parse_8h_adb51b982895bab6db9bc13715e046e2b}\label{_parse_8h_adb51b982895bab6db9bc13715e046e2b}} 
+\index{Parse.h@{Parse.h}!skip\_whitespace@{skip\_whitespace}}
+\index{skip\_whitespace@{skip\_whitespace}!Parse.h@{Parse.h}}
+\doxysubsubsection{\texorpdfstring{skip\_whitespace()}{skip\_whitespace()}}
+{\footnotesize\ttfamily void skip\+\_\+whitespace (\begin{DoxyParamCaption}\item[{istream \&}]{in }\end{DoxyParamCaption})}
+
+
+
+A helper method used to skip any whitespace within the input to be parsed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & the source of the input \\
+\hline
+\end{DoxyParams}

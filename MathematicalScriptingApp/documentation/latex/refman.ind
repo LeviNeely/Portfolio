@@ -1,0 +1,215 @@
+\begin{theindex}
+
+  \item {/Users/levineely/Portfolio/Portfolio/MathematicalScriptingApp/Expr.cpp}, 
+		\hyperpage{45}
+  \item {/Users/levineely/Portfolio/Portfolio/MathematicalScriptingApp/Expr.h}, 
+		\hyperpage{48}
+  \item {/Users/levineely/Portfolio/Portfolio/MathematicalScriptingApp/Parse.cpp}, 
+		\hyperpage{53}
+  \item {/Users/levineely/Portfolio/Portfolio/MathematicalScriptingApp/Parse.h}, 
+		\hyperpage{56}
+  \item {/Users/levineely/Portfolio/Portfolio/MathematicalScriptingApp/Value.cpp}, 
+		\hyperpage{61}
+  \item {/Users/levineely/Portfolio/Portfolio/MathematicalScriptingApp/Value.h}, 
+		\hyperpage{64}
+  \item {/Users/levineely/Portfolio/Portfolio/MathematicalScriptingApp/pointer.h}, 
+		\hyperpage{60}
+
+  \indexspace
+
+  \item {AddExpr}, \hyperpage{9}
+    \subitem {AddExpr}, \hyperpage{10}
+    \subitem {equals}, \hyperpage{10}
+    \subitem {pretty\_print\_at}, \hyperpage{10}
+    \subitem {print}, \hyperpage{11}
+
+  \indexspace
+
+  \item {BoolExpr}, \hyperpage{11}
+    \subitem {BoolExpr}, \hyperpage{12}
+    \subitem {equals}, \hyperpage{12}
+    \subitem {pretty\_print\_at}, \hyperpage{12}
+    \subitem {print}, \hyperpage{13}
+  \item {BoolValue}, \hyperpage{13}
+    \subitem {BoolValue}, \hyperpage{14}
+    \subitem {equals}, \hyperpage{14}
+    \subitem {is\_true}, \hyperpage{16}
+    \subitem {print}, \hyperpage{16}
+
+  \indexspace
+
+  \item {CallExpr}, \hyperpage{16}
+    \subitem {CallExpr}, \hyperpage{17}
+    \subitem {equals}, \hyperpage{18}
+    \subitem {pretty\_print\_at}, \hyperpage{18}
+    \subitem {print}, \hyperpage{18}
+  \item {CLASS}
+    \subitem {Expr.h}, \hyperpage{50}
+    \subitem {Value.h}, \hyperpage{64}
+
+  \indexspace
+
+  \item {EmptyEnv}, \hyperpage{19}
+    \subitem {PTR}, \hyperpage{19}
+  \item {Env}, \hyperpage{20}
+  \item {EqExpr}, \hyperpage{20}
+    \subitem {EqExpr}, \hyperpage{21}
+    \subitem {equals}, \hyperpage{21}
+    \subitem {pretty\_print\_at}, \hyperpage{21}
+    \subitem {print}, \hyperpage{22}
+  \item {equals}
+    \subitem {AddExpr}, \hyperpage{10}
+    \subitem {BoolExpr}, \hyperpage{12}
+    \subitem {BoolValue}, \hyperpage{14}
+    \subitem {CallExpr}, \hyperpage{18}
+    \subitem {EqExpr}, \hyperpage{21}
+    \subitem {FunExpr}, \hyperpage{24}
+    \subitem {FunValue}, \hyperpage{27}
+    \subitem {IfExpr}, \hyperpage{29}
+    \subitem {LetExpr}, \hyperpage{32}
+    \subitem {MultExpr}, \hyperpage{35}
+    \subitem {NumExpr}, \hyperpage{37}
+    \subitem {NumValue}, \hyperpage{39}
+    \subitem {VarExpr}, \hyperpage{43}
+  \item {Expr.cpp}
+    \subitem {PTR}, \hyperpage{46}
+  \item {Expr.h}
+    \subitem {CLASS}, \hyperpage{50}
+    \subitem {prec\_add}, \hyperpage{50}
+    \subitem {prec\_eq}, \hyperpage{50}
+    \subitem {prec\_mult}, \hyperpage{50}
+    \subitem {prec\_none}, \hyperpage{50}
+    \subitem {precedence\_t}, \hyperpage{49}
+  \item {ExtendedEnv}, \hyperpage{22}
+    \subitem {PTR}, \hyperpage{23}
+
+  \indexspace
+
+  \item {FunExpr}, \hyperpage{23}
+    \subitem {equals}, \hyperpage{24}
+    \subitem {FunExpr}, \hyperpage{24}
+    \subitem {pretty\_print\_at}, \hyperpage{25}
+    \subitem {print}, \hyperpage{25}
+  \item {FunValue}, \hyperpage{26}
+    \subitem {equals}, \hyperpage{27}
+    \subitem {FunValue}, \hyperpage{27}
+    \subitem {is\_true}, \hyperpage{27}
+    \subitem {print}, \hyperpage{27}
+
+  \indexspace
+
+  \item {IfExpr}, \hyperpage{28}
+    \subitem {equals}, \hyperpage{29}
+    \subitem {IfExpr}, \hyperpage{29}
+    \subitem {pretty\_print\_at}, \hyperpage{29}
+    \subitem {print}, \hyperpage{30}
+  \item {is\_true}
+    \subitem {BoolValue}, \hyperpage{16}
+    \subitem {FunValue}, \hyperpage{27}
+    \subitem {NumValue}, \hyperpage{41}
+
+  \indexspace
+
+  \item {LetExpr}, \hyperpage{30}
+    \subitem {equals}, \hyperpage{32}
+    \subitem {LetExpr}, \hyperpage{31}
+    \subitem {pretty\_print\_at}, \hyperpage{32}
+    \subitem {print}, \hyperpage{32}
+
+  \indexspace
+
+  \item {mainWidget}, \hyperpage{33}
+  \item {MultExpr}, \hyperpage{34}
+    \subitem {equals}, \hyperpage{35}
+    \subitem {MultExpr}, \hyperpage{34}
+    \subitem {pretty\_print\_at}, \hyperpage{35}
+    \subitem {print}, \hyperpage{35}
+
+  \indexspace
+
+  \item {NumExpr}, \hyperpage{36}
+    \subitem {equals}, \hyperpage{37}
+    \subitem {NumExpr}, \hyperpage{37}
+    \subitem {pretty\_print\_at}, \hyperpage{37}
+    \subitem {print}, \hyperpage{38}
+  \item {NumValue}, \hyperpage{38}
+    \subitem {equals}, \hyperpage{39}
+    \subitem {is\_true}, \hyperpage{41}
+    \subitem {NumValue}, \hyperpage{39}
+    \subitem {print}, \hyperpage{41}
+
+  \indexspace
+
+  \item {Parse.cpp}
+    \subitem {parse\_keyword}, \hyperpage{54}
+    \subitem {PTR}, \hyperpage{54}, \hyperpage{56}
+    \subitem {skip\_whitespace}, \hyperpage{56}
+  \item {Parse.h}
+    \subitem {parse\_keyword}, \hyperpage{57}
+    \subitem {PTR}, \hyperpage{57}, \hyperpage{59}
+    \subitem {skip\_whitespace}, \hyperpage{60}
+  \item {parse\_keyword}
+    \subitem {Parse.cpp}, \hyperpage{54}
+    \subitem {Parse.h}, \hyperpage{57}
+  \item {prec\_add}
+    \subitem {Expr.h}, \hyperpage{50}
+  \item {prec\_eq}
+    \subitem {Expr.h}, \hyperpage{50}
+  \item {prec\_mult}
+    \subitem {Expr.h}, \hyperpage{50}
+  \item {prec\_none}
+    \subitem {Expr.h}, \hyperpage{50}
+  \item {precedence\_t}
+    \subitem {Expr.h}, \hyperpage{49}
+  \item {pretty\_print\_at}
+    \subitem {AddExpr}, \hyperpage{10}
+    \subitem {BoolExpr}, \hyperpage{12}
+    \subitem {CallExpr}, \hyperpage{18}
+    \subitem {EqExpr}, \hyperpage{21}
+    \subitem {FunExpr}, \hyperpage{25}
+    \subitem {IfExpr}, \hyperpage{29}
+    \subitem {LetExpr}, \hyperpage{32}
+    \subitem {MultExpr}, \hyperpage{35}
+    \subitem {NumExpr}, \hyperpage{37}
+    \subitem {VarExpr}, \hyperpage{43}
+  \item {print}
+    \subitem {AddExpr}, \hyperpage{11}
+    \subitem {BoolExpr}, \hyperpage{13}
+    \subitem {BoolValue}, \hyperpage{16}
+    \subitem {CallExpr}, \hyperpage{18}
+    \subitem {EqExpr}, \hyperpage{22}
+    \subitem {FunExpr}, \hyperpage{25}
+    \subitem {FunValue}, \hyperpage{27}
+    \subitem {IfExpr}, \hyperpage{30}
+    \subitem {LetExpr}, \hyperpage{32}
+    \subitem {MultExpr}, \hyperpage{35}
+    \subitem {NumExpr}, \hyperpage{38}
+    \subitem {NumValue}, \hyperpage{41}
+    \subitem {VarExpr}, \hyperpage{43}
+  \item {PTR}
+    \subitem {EmptyEnv}, \hyperpage{19}
+    \subitem {Expr.cpp}, \hyperpage{46}
+    \subitem {ExtendedEnv}, \hyperpage{23}
+    \subitem {Parse.cpp}, \hyperpage{54}, \hyperpage{56}
+    \subitem {Parse.h}, \hyperpage{57}, \hyperpage{59}
+    \subitem {Value.cpp}, \hyperpage{62}
+
+  \indexspace
+
+  \item {skip\_whitespace}
+    \subitem {Parse.cpp}, \hyperpage{56}
+    \subitem {Parse.h}, \hyperpage{60}
+
+  \indexspace
+
+  \item {Value.cpp}
+    \subitem {PTR}, \hyperpage{62}
+  \item {Value.h}
+    \subitem {CLASS}, \hyperpage{64}
+  \item {VarExpr}, \hyperpage{41}
+    \subitem {equals}, \hyperpage{43}
+    \subitem {pretty\_print\_at}, \hyperpage{43}
+    \subitem {print}, \hyperpage{43}
+    \subitem {VarExpr}, \hyperpage{42}
+
+\end{theindex}

@@ -1,0 +1,123 @@
+\hypertarget{class_add_expr}{}\doxysection{Add\+Expr Class Reference}
+\label{class_add_expr}\index{AddExpr@{AddExpr}}
+
+
+\mbox{\hyperlink{class_add_expr}{Add\+Expr}} class that represents an addition expression, inherits from Expr.  
+
+
+
+
+{\ttfamily \#include $<$Expr.\+h$>$}
+
+Inheritance diagram for Add\+Expr\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_add_expr}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_add_expr_ad5a2d1a609bee72c0fb6646e2bbbc37e}\label{class_add_expr_ad5a2d1a609bee72c0fb6646e2bbbc37e}} 
+{\bfseries PTR} (Expr) lhs
+\begin{DoxyCompactList}\small\item\em The Expr on the left-\/hand side of the \mbox{\hyperlink{class_add_expr}{Add\+Expr}} class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_add_expr_a46af24c80b91f9a28fee02604530f053}\label{class_add_expr_a46af24c80b91f9a28fee02604530f053}} 
+{\bfseries PTR} (Expr) rhs
+\begin{DoxyCompactList}\small\item\em The Expr on the right-\/hand side of the \mbox{\hyperlink{class_add_expr}{Add\+Expr}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_add_expr_ae63bbc7451f249ceaabe888ec7a46bb0}{Add\+Expr}} (\mbox{\hyperlink{class_add_expr_ad5a2d1a609bee72c0fb6646e2bbbc37e}{PTR}}(Expr) lhs, \mbox{\hyperlink{class_add_expr_ad5a2d1a609bee72c0fb6646e2bbbc37e}{PTR}}(Expr) rhs)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_add_expr_aad37ec3f37cdaa5bb17223fd672c9fda}{equals}} (\mbox{\hyperlink{class_add_expr_ad5a2d1a609bee72c0fb6646e2bbbc37e}{PTR}}(Expr) e)
+\begin{DoxyCompactList}\small\item\em Equals method checks to see if two expressions are equal. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_add_expr_aaec2dbaf381177db8f32abe52152ee2a}\label{class_add_expr_aaec2dbaf381177db8f32abe52152ee2a}} 
+{\bfseries PTR} (Value) interp(PTR(\mbox{\hyperlink{class_env}{Env}}) env)
+\item 
+void \mbox{\hyperlink{class_add_expr_a7309de85c2834def0f114ff9d064f183}{print}} (std\+::ostream \&os)
+\begin{DoxyCompactList}\small\item\em Print method that prints the \mbox{\hyperlink{class_add_expr}{Add\+Expr}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_add_expr_a31346fe1c94652f9e275d5dc24d33a2f}{pretty\+\_\+print\+\_\+at}} (std\+::ostream \&os, \mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}{precedence\+\_\+t}} precedence, bool need\+Keyword\+Parenthesis, std\+::streampos \&position)
+\begin{DoxyCompactList}\small\item\em A method to print out the \mbox{\hyperlink{class_add_expr}{Add\+Expr}} in a more visually pleasing way. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_add_expr}{Add\+Expr}} class that represents an addition expression, inherits from Expr. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_add_expr_ae63bbc7451f249ceaabe888ec7a46bb0}\label{class_add_expr_ae63bbc7451f249ceaabe888ec7a46bb0}} 
+\index{AddExpr@{AddExpr}!AddExpr@{AddExpr}}
+\index{AddExpr@{AddExpr}!AddExpr@{AddExpr}}
+\doxysubsubsection{\texorpdfstring{AddExpr()}{AddExpr()}}
+{\footnotesize\ttfamily Add\+Expr\+::\+Add\+Expr (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_add_expr_ad5a2d1a609bee72c0fb6646e2bbbc37e}{PTR}}(Expr)}]{lhs,  }\item[{\mbox{\hyperlink{class_add_expr_ad5a2d1a609bee72c0fb6646e2bbbc37e}{PTR}}(Expr)}]{rhs }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Expr} & lhs = Left hand side expression \\
+\hline
+{\em Expr} & rhs = right hand side expression \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_add_expr_aad37ec3f37cdaa5bb17223fd672c9fda}\label{class_add_expr_aad37ec3f37cdaa5bb17223fd672c9fda}} 
+\index{AddExpr@{AddExpr}!equals@{equals}}
+\index{equals@{equals}!AddExpr@{AddExpr}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily bool Add\+Expr\+::equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_add_expr_ad5a2d1a609bee72c0fb6646e2bbbc37e}{PTR}}(Expr)}]{e }\end{DoxyParamCaption})}
+
+
+
+Equals method checks to see if two expressions are equal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Expr} & e = expression to be checked against \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+false if not equal or null, true if equal 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_add_expr_a31346fe1c94652f9e275d5dc24d33a2f}\label{class_add_expr_a31346fe1c94652f9e275d5dc24d33a2f}} 
+\index{AddExpr@{AddExpr}!pretty\_print\_at@{pretty\_print\_at}}
+\index{pretty\_print\_at@{pretty\_print\_at}!AddExpr@{AddExpr}}
+\doxysubsubsection{\texorpdfstring{pretty\_print\_at()}{pretty\_print\_at()}}
+{\footnotesize\ttfamily void Add\+Expr\+::pretty\+\_\+print\+\_\+at (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os,  }\item[{\mbox{\hyperlink{_expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}{precedence\+\_\+t}}}]{precedence,  }\item[{bool}]{need\+Keyword\+Parenthesis,  }\item[{std\+::streampos \&}]{position }\end{DoxyParamCaption})}
+
+
+
+A method to print out the \mbox{\hyperlink{class_add_expr}{Add\+Expr}} in a more visually pleasing way. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & the stream to print out the expression \\
+\hline
+{\em precedence} & the precedence of the expression \\
+\hline
+{\em need\+Keyword\+Parenthesis} & a boolean to indicate whether or not to include parenthesis in an expression with keywords \\
+\hline
+{\em position} & the current position of the stream that is printing out \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_add_expr_a7309de85c2834def0f114ff9d064f183}\label{class_add_expr_a7309de85c2834def0f114ff9d064f183}} 
+\index{AddExpr@{AddExpr}!print@{print}}
+\index{print@{print}!AddExpr@{AddExpr}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Add\+Expr\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os }\end{DoxyParamCaption})}
+
+
+
+Print method that prints the \mbox{\hyperlink{class_add_expr}{Add\+Expr}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ostream} & \&os\+: the ostream to print to \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/levineely/\+Portfolio/\+Portfolio/\+Mathematical\+Scripting\+App/\mbox{\hyperlink{_expr_8h}{Expr.\+h}}\item 
+/\+Users/levineely/\+Portfolio/\+Portfolio/\+Mathematical\+Scripting\+App/\mbox{\hyperlink{_expr_8cpp}{Expr.\+cpp}}\end{DoxyCompactItemize}

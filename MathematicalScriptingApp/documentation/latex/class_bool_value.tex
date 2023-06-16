@@ -1,0 +1,115 @@
+\hypertarget{class_bool_value}{}\doxysection{Bool\+Value Class Reference}
+\label{class_bool_value}\index{BoolValue@{BoolValue}}
+
+
+\mbox{\hyperlink{class_bool_value}{Bool\+Value}} class that represents a true/false value, inherits from Value.  
+
+
+
+
+{\ttfamily \#include $<$Value.\+h$>$}
+
+Inheritance diagram for Bool\+Value\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_bool_value}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_bool_value_afcd6148c9c87645efacd7b2469ed837f}{Bool\+Value}} (bool \mbox{\hyperlink{class_bool_value_a562920bad0fba6f0004d7d7a7e33e81e}{val}})
+\begin{DoxyCompactList}\small\item\em A constructor for the \mbox{\hyperlink{class_bool_value}{Bool\+Value}} class. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_bool_value_a0ee289a956db6454dbd7613fa7d09659}{equals}} (PTR(Value) other\+Value)
+\item 
+\mbox{\Hypertarget{class_bool_value_ae7ba64f0ae6d6edafef6b81c0b08ba48}\label{class_bool_value_ae7ba64f0ae6d6edafef6b81c0b08ba48}} 
+{\bfseries PTR} (Value) add\+\_\+to(PTR(Value) other\+Value)
+\item 
+\mbox{\Hypertarget{class_bool_value_aaf8a019a43a9297da6861b319a0b4038}\label{class_bool_value_aaf8a019a43a9297da6861b319a0b4038}} 
+{\bfseries PTR} (Value) multiply\+\_\+with(PTR(Value) other\+Value)
+\item 
+void \mbox{\hyperlink{class_bool_value_a1bd6df8ddfd01f41828c917459299e7b}{print}} (std\+::ostream \&os)
+\begin{DoxyCompactList}\small\item\em A method to print out the value of a \mbox{\hyperlink{class_bool_value}{Bool\+Value}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_bool_value_ab1fcddd41628fbb80413c4f5c4bd04c0}{is\+\_\+true}} ()
+\begin{DoxyCompactList}\small\item\em A method to tell if a \mbox{\hyperlink{class_bool_value}{Bool\+Value}} is true or not. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_bool_value_a20d2820d6d1690f6b135bc6d14372081}\label{class_bool_value_a20d2820d6d1690f6b135bc6d14372081}} 
+{\bfseries PTR} (Value) call(PTR(Value) actual\+\_\+arg)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_bool_value_a562920bad0fba6f0004d7d7a7e33e81e}\label{class_bool_value_a562920bad0fba6f0004d7d7a7e33e81e}} 
+bool {\bfseries val}
+\begin{DoxyCompactList}\small\item\em The boolean value of the \mbox{\hyperlink{class_bool_value}{Bool\+Value}} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_bool_value}{Bool\+Value}} class that represents a true/false value, inherits from Value. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_bool_value_afcd6148c9c87645efacd7b2469ed837f}\label{class_bool_value_afcd6148c9c87645efacd7b2469ed837f}} 
+\index{BoolValue@{BoolValue}!BoolValue@{BoolValue}}
+\index{BoolValue@{BoolValue}!BoolValue@{BoolValue}}
+\doxysubsubsection{\texorpdfstring{BoolValue()}{BoolValue()}}
+{\footnotesize\ttfamily Bool\+Value\+::\+Bool\+Value (\begin{DoxyParamCaption}\item[{bool}]{val }\end{DoxyParamCaption})}
+
+
+
+A constructor for the \mbox{\hyperlink{class_bool_value}{Bool\+Value}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & the boolean used to indicate the \mbox{\hyperlink{class_bool_value}{Bool\+Value}}\textquotesingle{}s boolean value \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_bool_value_a0ee289a956db6454dbd7613fa7d09659}\label{class_bool_value_a0ee289a956db6454dbd7613fa7d09659}} 
+\index{BoolValue@{BoolValue}!equals@{equals}}
+\index{equals@{equals}!BoolValue@{BoolValue}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily bool Bool\+Value\+::equals (\begin{DoxyParamCaption}\item[{PTR(Value)}]{other\+Value }\end{DoxyParamCaption})}
+
+\textbackslash{}breif A method to test if two Bool\+Values are equal 
+\begin{DoxyParams}{Parameters}
+{\em other\+Value} & the other Value to be tested against \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if they are equal, false if they are not or incompatible 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bool_value_ab1fcddd41628fbb80413c4f5c4bd04c0}\label{class_bool_value_ab1fcddd41628fbb80413c4f5c4bd04c0}} 
+\index{BoolValue@{BoolValue}!is\_true@{is\_true}}
+\index{is\_true@{is\_true}!BoolValue@{BoolValue}}
+\doxysubsubsection{\texorpdfstring{is\_true()}{is\_true()}}
+{\footnotesize\ttfamily bool Bool\+Value\+::is\+\_\+true (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+A method to tell if a \mbox{\hyperlink{class_bool_value}{Bool\+Value}} is true or not. 
+
+\begin{DoxyReturn}{Returns}
+the val of the \mbox{\hyperlink{class_bool_value}{Bool\+Value}}, indicating true or false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_bool_value_a1bd6df8ddfd01f41828c917459299e7b}\label{class_bool_value_a1bd6df8ddfd01f41828c917459299e7b}} 
+\index{BoolValue@{BoolValue}!print@{print}}
+\index{print@{print}!BoolValue@{BoolValue}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Bool\+Value\+::print (\begin{DoxyParamCaption}\item[{std\+::ostream \&}]{os }\end{DoxyParamCaption})}
+
+
+
+A method to print out the value of a \mbox{\hyperlink{class_bool_value}{Bool\+Value}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & the output stream to print to \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/levineely/\+Portfolio/\+Portfolio/\+Mathematical\+Scripting\+App/\mbox{\hyperlink{_value_8h}{Value.\+h}}\item 
+/\+Users/levineely/\+Portfolio/\+Portfolio/\+Mathematical\+Scripting\+App/\mbox{\hyperlink{_value_8cpp}{Value.\+cpp}}\end{DoxyCompactItemize}
