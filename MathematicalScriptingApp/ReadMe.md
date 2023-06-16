@@ -14,12 +14,14 @@ Below are the types of mathematical functions that MathScript is capable of hand
 Addition:
 
 5 + 6
+
 5 + -6
 
 The above will result in interp values of 11 and -1 respectively.
 Note: MathScript does not support subtraction, but handles negative values. In order to perform subtraction work, simply add a negative number. Thus:
 
 2 - 1 : will not compute properly
+
 2 + -1 : will result in the correct value of 1
 
 Multiplication:
@@ -33,7 +35,9 @@ The above will result in interp values of 25 and -25 respectively.
 Note: MathScript does not support division, nor does it support fractions. Instances with the following syntax will not result in correct values:
 
 5 / 5
+
 5 * 0.2
+
 5 * (1/5)
 
 Variables:
@@ -63,6 +67,7 @@ Booleans:
 MathScript can evaluate boolean statements using the double equal signs.
 
 3 == 3
+
 3 == (1+1)
 
 Will evaluate to _true and _false respectively.
@@ -72,6 +77,7 @@ Parenthesis:
 MathScript supports the usage of parenthesis to indicate that what occurs inside parenthesis is evaluated before what happens outside of them
 
 3 + 5 * 5
+
 (3 + 5) * 5
 
 Will result in 28 and 40 respectively.
@@ -81,6 +87,7 @@ If:
 MathScript allows for if else statements using the following language:
 
 _if 3==3 _then 55 _else _false
+
 _if (3+3)==5 then 55 else _false
 
 Will evaluate to 55 and _false respectively.
@@ -88,11 +95,15 @@ Will evaluate to 55 and _false respectively.
 Func:
 
 MathScripts allows for functions using the format:
+
 _fun(variable) expression
+
 The following are some examples:
 
 _fun(x) x + 5
+
 _let x = 5 _in _fun(x) x + 5
+
 _let x = 5 _in _fun(x) _if x == 5 _then _true _else _false
 
 Would evaluate to [function], 10, and _true respectively.
