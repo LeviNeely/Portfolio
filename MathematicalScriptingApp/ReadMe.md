@@ -29,6 +29,7 @@ Multiplication:
 Utilizes the mathematical symbol "*" to denote multiplication.
 
 5 * 5
+
 5 * -5
 
 The above will result in interp values of 25 and -25 respectively.
@@ -45,7 +46,9 @@ Variables:
 Utilizes any alpha character as a variable. Without use of a let or func function, the variable will not interpret to any value.
 
 5 + x
+
 5 * x
+
 x * y
 
 All of the above examples will result in an error message.
