@@ -3,36 +3,81 @@ This portfolio contains all my coding projects to date!
 
 Below, I have listed all of the directories found inside my portfolio and a short description of what can be found within. Please contact me with any inquiries at levijneely@gmail.com.
 
-Asteroids: A video game developed using SFML in C++. Utilizes collision detection, randomized enemies, health tracking, and increasing difficulty levels.
+##Asteroids
 
-BeeWebGame: A simple JavaScript web game where randomly-generated bees follow the mouse cursor and the user avoids collision.
+A video game developed using SFML in C++. Utilizes collision detection, randomized enemies, health tracking, and increasing difficulty levels. Navigate to the directory named "build", ensure that you have all the libraries needed, then use the make command to build the asteroids executable. Finally, run `./asteroids` to play the game.
 
-BinarySearchTree: A Java implementation of a binary search tree with helper functions.
+##Bee Web Game
 
-BlockCipher: A short C++ program that takes in a message from the user, encrypts it using a BlockCipher with shuffle tables, and decrypts it again for proof of concept.
+A simple JavaScript web game where randomly-generated bees follow the mouse cursor and the user avoids collision. Simply open the "NotTheBees.html" file and make sure that the corresponding .js file is in the same directory to play this simple game on your browser.
 
-DNSResolver: A simplified Java implementation of the DNS protocol that parses requests received from the dig command line tool, checkes an implemented local cache for unexpired responses, forwards 
-the request if not present in the cache, then provides a response to the request.
+##Binary Search Tree
 
-DiabetesCalculator: A simple calculator coded in Java that takes in information about the user, information about the meal being consumed, then calculates the appropriate dose of insulin along with 
+A Java implementation of a binary search tree with helper functions. There is a .zip file that contains all the source code. Compile and run this application to see a binary search tree implemented to make a simple spell-checker.
+
+##Block Cipher
+
+A short C++ program that takes in a message from the user, encrypts it using a BlockCipher with shuffle tables, and decrypts it again for proof of concept. Compile this by running make in the directory with the source files. Then run it using the `./blockcipher` command.
+
+##Currency Converter
+
+A simple program that utilizes a Firestore database to convert currencies using an exchange rate. The program automatically updates the database using exchange rates retrieved from an API to keep the exchange rates current. To run, simply run `node ./main.js` in your terminal, ensuring that all the necessary files are in the same directory.
+
+##Diabetes Calculator
+
+A simple calculator coded in Java that takes in information about the user, information about the meal being consumed, then calculates the appropriate dose of insulin along with 
 the best dosing strategy using the Warsaw method.
 
-DiyVector: A basic C++ implementation of a templatized vector with methods similar to the builtin vector.
+##Diy Vector
 
-Fractions: Basic Java implementation of fractions to add, subtract, multiply, divide, etc. fractions input by the user.
+A basic C++ implementation of a templatized vector with methods similar to the builtin vector. Simply run make, then `./diyvector` to run the program.
 
-InteractiveTimesTable: A JavaScript web-based interactive times table, showing what the product of two numbers are using color-changing and cursor-oriented user interaction.
+##DNS Resolver
 
-MallocImplementation: A self-implemented malloc() and free() replacement coded in C++. Tested and shown to be only ~30x slower than the builtin malloc() and free().
+A simplified Java implementation of the DNS protocol that parses requests received from the dig command line tool, checks an implemented local cache for unexpired responses, forwards 
+the request if not present in the cache, then provides a response to the request.
 
-MathematicalScriptingApp: This is an app developed with Qt and written in C++. It has the possibility to parse input text, interpret that text, or print it in a more visually pleasing way.
+##Fractions
 
-PacManPathFinder: A graph-based pathfinding Java program that takes in a maze and finds the shortest path to the destination.
+Basic Java implementation of fractions to add, subtract, multiply, divide, etc. fractions input by the user.
 
-QuickSortAndMergeSort: QuickSort and MergeSort implementation in Java that compares and contrasts the two implementations.
+##Interactive Times Table
 
-SimpleWebChat: A Java implementation of a web chat that allows for users to join a chat room, send and receive messages from others in the chat room, and leave the chat room.
+A JavaScript web-based interactive times table, showing what the product of two numbers are using color-changing and cursor-oriented user interaction. Simply open the .html file to run the code.
 
-Synthesizer: A Java-implemented synthesizer that allows the user to select frequencies and modify resulting tones produced by the synthesizer.
+##Learning Management System
 
-UnixShell: A Unix Shell crafted in C++ that contains the capability to run commands, utilize I/O redirection, and execute tab completion. Utilizes syscalls, pipes, and methodical error handling.
+This project that aimed to be similar in functionality to Canvas can be found by clicking [here](team3.dbproject.eng.utah.edu). This project utilizes mySQL, .NET/C#, and LINQ to manage the system as a whole. This project can register a new user as an  administrator, professor, or student. Each role has different functionality and can see/interact with different aspects of the program.
+
+##Malloc Implementation
+
+A self-implemented `malloc()` and `free()` replacement coded in C++. Tested and shown to be only ~30x slower than the builtin `malloc()` and `free()`. Run the `make` command to compile the executable `msdmalloc`, but feel free to also run `make test` to run tests on the program and `make benchmark` to run a benchmark test on the program.
+
+##Mathematical Scripting App
+
+This is an app developed with Qt and written in C++. It has the possibility to parse input text, interpret that text, or print it in a more visually pleasing way. Download the .zip file and run the program from there to utilize it's functionality.
+
+##Neural Network using Pytorch
+
+A pytorch neural network trained on fonts to detect letters. Simply open the .ipynb file and run using your preferred kernal.
+
+##PacMan Path Finder
+
+A graph-based pathfinding Java program that takes in a maze and finds the shortest path to the destination.
+
+##Quick Sort and Merge Sort
+
+QuickSort and MergeSort implementation in Java that compares and contrasts the two implementations.
+
+##Simple Web Chat
+
+A Java implementation of a web chat that allows for users to join a chat room, send and receive messages from others in the chat room, and leave the chat room. First run the RoomChatServer.jar file before opening the chat.html file to see the program in execution.
+
+##Synthesizer
+
+A Java-implemented synthesizer that allows the user to select frequencies and modify resulting tones produced by the synthesizer.
+
+##Unix Shell
+
+A Unix Shell crafted in C++ that contains the capability to run commands, utilize I/O redirection, and execute tab completion. Utilizes syscalls, pipes, and methodical error handling. Simply run the `make` command to create the executable, then run the `./shell` command to run the UnixShell.
+
