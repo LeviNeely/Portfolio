@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://mxqwqpu7yr13"
+path="res://.godot/imported/Rhapsody - A Morbid Curiosity (Chiptune Version).mp3-536d89d7a8a596df4f7a1481507b9ec3.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Music/Rhapsody - A Morbid Curiosity (Chiptune Version).mp3"
+dest_files=["res://.godot/imported/Rhapsody - A Morbid Curiosity (Chiptune Version).mp3-536d89d7a8a596df4f7a1481507b9ec3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

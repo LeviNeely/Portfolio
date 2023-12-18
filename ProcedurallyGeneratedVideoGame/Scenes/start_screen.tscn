@@ -1,0 +1,102 @@
+[gd_scene load_steps=9 format=3 uid="uid://ci88qr5x5n77i"]
+
+[ext_resource type="Script" path="res://Scripts/start_screen.gd" id="1_mgewb"]
+[ext_resource type="Texture2D" uid="uid://cnffhxuhk8j5b" path="res://Assets/Resources/screen_background.tres" id="2_yrqbu"]
+[ext_resource type="Texture2D" uid="uid://bpd2f08yf3k7r" path="res://Assets/Resources/screen_border.tres" id="3_unor7"]
+[ext_resource type="FontFile" uid="uid://ffetvwxqij3q" path="res://Assets/Fonts/BitPotion.ttf" id="4_8nlef"]
+[ext_resource type="AudioStream" uid="uid://bkt8w83nvgoem" path="res://Assets/Audio/Music/Aldous Ichnite - Desk Drawer Mysteries.mp3" id="5_h0yik"]
+[ext_resource type="AudioStream" uid="uid://kclrame41btq" path="res://Assets/Audio/SoundFX/UI/rollover2.ogg" id="6_hkd5w"]
+[ext_resource type="AudioStream" uid="uid://c1jrju2q54jro" path="res://Assets/Audio/SoundFX/UI/rollover6.ogg" id="7_y3hia"]
+[ext_resource type="AudioStream" uid="uid://rpwucbw7j85u" path="res://Assets/Audio/SoundFX/UI/switch6.ogg" id="8_7jn43"]
+
+[node name="StartScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mgewb")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_yrqbu")
+
+[node name="Border" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_unor7")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -48.0
+offset_top = -46.5
+offset_right = 48.0
+offset_bottom = 46.5
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Title" type="RichTextLabel" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("4_8nlef")
+theme_override_font_sizes/normal_font_size = 50
+bbcode_enabled = true
+text = "[center]Proc Gen[/center]
+"
+fit_content = true
+autowrap_mode = 0
+
+[node name="New Game" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_8nlef")
+theme_override_font_sizes/font_size = 35
+text = "New Game"
+flat = true
+
+[node name="Load Game" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_8nlef")
+theme_override_font_sizes/font_size = 35
+text = "Load Game"
+flat = true
+
+[node name="StartScreenMusic" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("5_h0yik")
+
+[node name="MouseOn" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("6_hkd5w")
+
+[node name="MouseOff" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("7_y3hia")
+
+[node name="Click" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("8_7jn43")
+
+[connection signal="mouse_entered" from="VBoxContainer/New Game" to="." method="_on_new_game_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/New Game" to="." method="_on_new_game_mouse_exited"]
+[connection signal="pressed" from="VBoxContainer/New Game" to="." method="_on_new_game_pressed"]
+[connection signal="mouse_entered" from="VBoxContainer/Load Game" to="." method="_on_load_game_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/Load Game" to="." method="_on_load_game_mouse_exited"]
+[connection signal="pressed" from="VBoxContainer/Load Game" to="." method="_on_load_game_pressed"]

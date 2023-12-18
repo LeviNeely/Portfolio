@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://co6j5mx02djbi"]
+
+[ext_resource type="Script" path="res://Scripts/exit.gd" id="1_5gjom"]
+[ext_resource type="Texture2D" uid="uid://cbtjosffiyif" path="res://Assets/SpriteSheets/Portal.png" id="2_6my7p"]
+[ext_resource type="AudioStream" uid="uid://c1qfk8fx01bqe" path="res://Assets/Audio/SoundFX/Movement/172206__fins__teleport.wav" id="3_1iwmp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k3bxp"]
+size = Vector2(16, 15)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2wcsc"]
+
+[node name="exit" type="StaticBody2D"]
+script = ExtResource("1_5gjom")
+
+[node name="portal_blue" type="Sprite2D" parent="."]
+texture = ExtResource("2_6my7p")
+hframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_k3bxp")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_2wcsc")
+
+[node name="portal_green" type="Sprite2D" parent="."]
+unique_name_in_owner = true
+visible = false
+texture = ExtResource("2_6my7p")
+hframes = 4
+frame = 1
+
+[node name="TeleportSound" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("3_1iwmp")
+volume_db = -10.0
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

@@ -65,6 +65,10 @@ A pytorch neural network trained on fonts to detect letters. Simply open the .ip
 
 A graph-based pathfinding Java program that takes in a maze and finds the shortest path to the destination.
 
+## Procedurally Developed Video Game
+
+A video game developed in the Godot 4 engine written in GDScript. This game employs various techniques (including four-dimensional open simplex noise, A* pathfinding, and a chunk-loading management system) to procedurally generate content for the game. Peruse the code here or play the game [here](https://levineely.itch.io/proc-gen).
+
 ## Quick Sort and Merge Sort
 
 QuickSort and MergeSort implementation in Java that compares and contrasts the two implementations.

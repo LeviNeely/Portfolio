@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bkt8w83nvgoem"
+path="res://.godot/imported/Aldous Ichnite - Desk Drawer Mysteries.mp3-84095018456deec7ff4329a12c91735a.mp3str"
+
+[deps]
+
+source_file="res://Assets/Audio/Music/Aldous Ichnite - Desk Drawer Mysteries.mp3"
+dest_files=["res://.godot/imported/Aldous Ichnite - Desk Drawer Mysteries.mp3-84095018456deec7ff4329a12c91735a.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

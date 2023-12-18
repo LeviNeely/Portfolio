@@ -1,0 +1,86 @@
+[gd_scene load_steps=11 format=3 uid="uid://bfc4lckqi1hfw"]
+
+[ext_resource type="Script" path="res://Scripts/chest.gd" id="1_5w0b8"]
+[ext_resource type="Texture2D" uid="uid://vhfksaefml8d" path="res://Assets/TileSets/Dungeon_Tileset.png" id="2_1dbyw"]
+[ext_resource type="AudioStream" uid="uid://bh7oppl7nc2pe" path="res://Assets/Audio/SoundFX/Movement/doorOpen_2.ogg" id="3_giuse"]
+[ext_resource type="AudioStream" uid="uid://ceiel4squ8kmj" path="res://Assets/Audio/SoundFX/UI/powerUp.wav" id="4_yekvv"]
+[ext_resource type="AudioStream" uid="uid://bwvr7ognit3cp" path="res://Assets/Audio/SoundFX/UI/metalClick.ogg" id="5_bnb24"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hp1lo"]
+size = Vector2(14, 12)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_651un"]
+size = Vector2(18, 15)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_1alxj"]
+load_path = "res://.godot/imported/UiIcons.png-a00f40014d0055d118451a365e2b89df.ctex"
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8d4pd"]
+radius = 11.0
+height = 22.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fhcu1"]
+radius = 8.0
+
+[node name="chest" type="StaticBody2D"]
+script = ExtResource("1_5w0b8")
+
+[node name="Chest" type="Sprite2D" parent="."]
+texture = ExtResource("2_1dbyw")
+hframes = 10
+vframes = 10
+frame = 84
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+shape = SubResource("RectangleShape2D_hp1lo")
+
+[node name="Area2D" type="Area2D" parent="."]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_651un")
+
+[node name="Sword" type="Sprite2D" parent="."]
+visible = false
+texture = SubResource("CompressedTexture2D_1alxj")
+hframes = 4
+vframes = 12
+frame = 5
+
+[node name="Area2D" type="Area2D" parent="Sword"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sword/Area2D"]
+shape = SubResource("CapsuleShape2D_8d4pd")
+disabled = true
+
+[node name="Potion" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("2_1dbyw")
+hframes = 10
+vframes = 10
+frame = 89
+
+[node name="Area2D" type="Area2D" parent="Potion"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Potion/Area2D"]
+position = Vector2(0, 1)
+shape = SubResource("CircleShape2D_fhcu1")
+disabled = true
+
+[node name="OpenSound" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("3_giuse")
+
+[node name="DrinkSound" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("4_yekvv")
+
+[node name="SwordSound" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("5_bnb24")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="Sword/Area2D" to="." method="_on_sword_area_2d_body_entered"]
+[connection signal="body_entered" from="Potion/Area2D" to="." method="_on_potion_area_2d_body_entered"]

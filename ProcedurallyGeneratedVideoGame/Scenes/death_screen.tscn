@@ -1,0 +1,103 @@
+[gd_scene load_steps=9 format=3 uid="uid://lhbjbddnbng"]
+
+[ext_resource type="Script" path="res://Scripts/death_screen.gd" id="1_p08r0"]
+[ext_resource type="Texture2D" uid="uid://cnffhxuhk8j5b" path="res://Assets/Resources/screen_background.tres" id="2_r8bde"]
+[ext_resource type="Texture2D" uid="uid://bpd2f08yf3k7r" path="res://Assets/Resources/screen_border.tres" id="3_s3cge"]
+[ext_resource type="FontFile" uid="uid://ffetvwxqij3q" path="res://Assets/Fonts/BitPotion.ttf" id="4_qi6qe"]
+[ext_resource type="AudioStream" uid="uid://nsd8ymrwhi0m" path="res://Assets/Audio/Music/WahCubed.mp3" id="5_mktov"]
+[ext_resource type="AudioStream" uid="uid://kclrame41btq" path="res://Assets/Audio/SoundFX/UI/rollover2.ogg" id="6_6pv12"]
+[ext_resource type="AudioStream" uid="uid://c1jrju2q54jro" path="res://Assets/Audio/SoundFX/UI/rollover6.ogg" id="7_b6cnr"]
+[ext_resource type="AudioStream" uid="uid://rpwucbw7j85u" path="res://Assets/Audio/SoundFX/UI/switch6.ogg" id="8_0lv45"]
+
+[node name="DeathScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_p08r0")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_r8bde")
+
+[node name="Border" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_s3cge")
+stretch_mode = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -48.0
+offset_top = -46.5
+offset_right = 48.0
+offset_bottom = 46.5
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="DeathMessage" type="RichTextLabel" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("4_qi6qe")
+theme_override_font_sizes/normal_font_size = 50
+bbcode_enabled = true
+text = "[center]Game Over[/center]
+"
+fit_content = true
+autowrap_mode = 0
+
+[node name="Respawn" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_qi6qe")
+theme_override_font_sizes/font_size = 35
+text = "Respawn"
+flat = true
+
+[node name="MainMenu" type="Button" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_qi6qe")
+theme_override_font_sizes/font_size = 35
+text = "Main Menu"
+flat = true
+
+[node name="DeathMusic" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("5_mktov")
+
+[node name="MouseOn" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("6_6pv12")
+
+[node name="MouseOff" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("7_b6cnr")
+
+[node name="Click" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("8_0lv45")
+
+[connection signal="mouse_entered" from="VBoxContainer/Respawn" to="." method="_on_respawn_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/Respawn" to="." method="_on_respawn_mouse_exited"]
+[connection signal="pressed" from="VBoxContainer/Respawn" to="." method="_on_respawn_pressed"]
+[connection signal="mouse_entered" from="VBoxContainer/MainMenu" to="." method="_on_main_menu_mouse_entered"]
+[connection signal="mouse_exited" from="VBoxContainer/MainMenu" to="." method="_on_main_menu_mouse_exited"]
+[connection signal="pressed" from="VBoxContainer/MainMenu" to="." method="_on_main_menu_pressed"]

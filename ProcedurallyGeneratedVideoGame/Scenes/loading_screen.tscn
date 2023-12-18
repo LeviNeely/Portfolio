@@ -1,0 +1,82 @@
+[gd_scene load_steps=7 format=3 uid="uid://bady15hqt45r4"]
+
+[ext_resource type="Script" path="res://Scripts/loading_screen.gd" id="1_n54jy"]
+[ext_resource type="Texture2D" uid="uid://bpd2f08yf3k7r" path="res://Assets/Resources/screen_border.tres" id="2_1hmkm"]
+[ext_resource type="Texture2D" uid="uid://cnffhxuhk8j5b" path="res://Assets/Resources/screen_background.tres" id="3_plj7x"]
+[ext_resource type="FontFile" uid="uid://ffetvwxqij3q" path="res://Assets/Fonts/BitPotion.ttf" id="4_bp7m4"]
+[ext_resource type="Texture2D" uid="uid://bfxams8e01bb7" path="res://Assets/Resources/loading_bar_background.tres" id="5_ryet7"]
+[ext_resource type="Texture2D" uid="uid://lendw2sjmbf" path="res://Assets/Resources/progress_bar.tres" id="6_ydbdu"]
+
+[node name="loading_screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_n54jy")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_plj7x")
+
+[node name="Border" type="TextureRect" parent="."]
+z_index = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_1hmkm")
+stretch_mode = 1
+
+[node name="Text" type="RichTextLabel" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -62.0
+offset_top = -63.0
+offset_right = 62.0
+offset_bottom = -21.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_fonts/normal_font = ExtResource("4_bp7m4")
+theme_override_font_sizes/normal_font_size = 50
+text = "Loading 0%"
+fit_content = true
+autowrap_mode = 0
+
+[node name="LoadingBar" type="TextureProgressBar" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -144.0
+offset_top = -4.0
+offset_right = -96.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(6, 6)
+value = 100.0
+rounded = true
+nine_patch_stretch = true
+stretch_margin_top = 4
+stretch_margin_bottom = 5
+texture_over = ExtResource("5_ryet7")
+texture_progress = ExtResource("6_ydbdu")
+texture_progress_offset = Vector2(2.08165e-12, 2.08165e-12)
