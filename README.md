@@ -5,7 +5,7 @@ Below, I have listed all of the directories found inside my portfolio and a shor
 
 ## Influence
 
-A video game developed in the Godot 4 engine using gdscript. Building on an idea around ethical social media consumption, this game implements persistent data, save/load functionality, multiple endings (dependent upon player input), and various shaders developed for screen and object modification. The game can be played [here] (https://levineely.itch.io/influence).
+A video game developed in the Godot 4 engine using gdscript. Building on an idea around ethical social media consumption, this game implements persistent data, save/load functionality, multiple endings (dependent upon player input), and various shaders developed for screen and object modification. The game can be played [here](https://levineely.itch.io/influence).
 
 ## Asteroids
 
