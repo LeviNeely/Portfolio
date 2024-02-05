@@ -3,6 +3,10 @@ This portfolio contains all my coding projects to date!
 
 Below, I have listed all of the directories found inside my portfolio and a short description of what can be found within. Please contact me with any inquiries at levijneely@gmail.com.
 
+## Influence
+
+A video game developed in the Godot 4 engine using gdscript. Building on an idea around ethical social media consumption, this game implements persistent data, save/load functionality, multiple endings (dependent upon player input), and various shaders developed for screen and object modification. The game can be played [here] (https://levineely.itch.io/influence).
+
 ## Asteroids
 
 A video game developed using SFML in C++. Utilizes collision detection, randomized enemies, health tracking, and increasing difficulty levels. Navigate to the directory named "build", ensure that you have all the libraries needed, then use the make command to build the asteroids executable. Finally, run `./asteroids` to play the game.
