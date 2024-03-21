@@ -23,6 +23,10 @@ A Java implementation of a binary search tree with helper functions. There is a 
 
 A short C++ program that takes in a message from the user, encrypts it using a BlockCipher with shuffle tables, and decrypts it again for proof of concept. Compile this by running make in the directory with the source files. Then run it using the `./blockcipher` command.
 
+## Compute Shader Practice
+
+This project dives into using compute shaders to speed up calculating 4D Open Simplex Noise. This stems from the Procedurally Generated Video Game. That uses Godot's built in computational pipeline to calculate the noise values. This is very expensive and causes the game to lag. Once I utilized GLSL to create a computational shader, I was able to speed up the calculation 100x. In order to run this, clone the repo and run the project using Godot.
+
 ## Currency Converter
 
 A simple program that utilizes a Firestore database to convert currencies using an exchange rate. The program automatically updates the database using exchange rates retrieved from an API to keep the exchange rates current. To run, simply run `node ./main.js` in your terminal, ensuring that all the necessary files are in the same directory.
