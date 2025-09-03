@@ -3,7 +3,7 @@ This portfolio contains all my coding projects to date!
 
 Below, I have listed all of the directories found inside my portfolio and a short description of what can be found within. Please contact me with any inquiries at levijneely@gmail.com.
 
-**IF YOU ARE HERE FROM THE DAVIS TECHNICAL COLLEGE SOFTWARE DEVELOPMENT PROGRAM, PLEASE LOOK IN THE COMPUTE SHADER PRACTICE FOLDER FOR A TEXT FILE**
+**IF YOU ARE HERE FROM THE DAVIS TECHNICAL COLLEGE SOFTWARE DEVELOPMENT PROGRAM, PLEASE LOOK IN THE PROJECT THAT HAS A 100X SPEED UP FOR A TEXT FILE**
 
 ## #Influence
 
